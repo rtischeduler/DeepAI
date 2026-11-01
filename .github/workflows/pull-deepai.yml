@@ -1,0 +1,66 @@
+name: pull-deepai
+on:
+  workflow_dispatch:
+    inputs:
+      start_url:
+        description: Page to start pulling from
+        required: true
+        default: https://deepai.org/chat
+      out_dir:
+        description: Folder in the repo for the results
+        required: true
+        default: Site
+      extra_hosts:
+        description: Extra hosts to follow, comma separated (cdn or api hosts)
+        required: false
+        default: ""
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: download repo
+        uses: actions/checkout@v4
+
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: pull files
+        env:
+          START_URL: ${{ inputs.start_url }}
+          OUT_DIR: ${{ inputs.out_dir }}
+          EXTRA_HOSTS: ${{ inputs.extra_hosts }}
+        run: |
+          rm -rf "$OUT_DIR"
+          node .github/scripts/crawl.mjs "$START_URL" "$OUT_DIR" "$EXTRA_HOSTS"
+
+      - name: summary
+        env:
+          OUT_DIR: ${{ inputs.out_dir }}
+        run: |
+          {
+            echo "## pulled files"
+            echo '```'
+            cut -f1-5 "$OUT_DIR/index.tsv" | head -c 40000
+            echo '```'
+            echo "## endpoint strings"
+            echo '```'
+            head -c 20000 "$OUT_DIR/endpoints.tsv"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: commit results
+        env:
+          START_URL: ${{ inputs.start_url }}
+          OUT_DIR: ${{ inputs.out_dir }}
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add -A "$OUT_DIR"
+          git commit -m "pull $START_URL into $OUT_DIR" || echo "nothing to commit"
+          git pull --rebase origin ${{ github.ref_name }} || true
+          git push origin HEAD:${{ github.ref_name }}

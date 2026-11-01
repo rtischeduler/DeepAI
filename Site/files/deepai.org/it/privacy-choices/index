@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le tue scelte in materia di privacy - DeepAI</title>
+
+  <meta name="description" content="Gestisci le tue preferenze sulla privacy e le impostazioni relative alla raccolta dei dati per DeepAI.">
+  <link rel="canonical" href="https://deepai.org/it/privacy-choices/">
+
+  <script>
+    const app_base_url = 'https://api.deepai.org';
+    const contact_url = '/contact';
+  </script>
+  <script src="/it/i18n.c65fe003b867.js"></script>
+
+  <style>
+    /* Privacy Modal - Comprehensive Design */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.privacy-container {
+  width: 100%;
+  padding: 24px;
+  min-height: 100%;
+}
+
+/* Header */
+.privacy-header {
+  margin-bottom: 16px;
+}
+
+.privacy-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.privacy-header .subtitle {
+  font-size: 13px;
+  color: #666;
+  font-weight: normal;
+}
+
+/* Loading State */
+.loading-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3b82f6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Main Content */
+#main-content {
+  flex: 1;
+}
+
+.intro-text {
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Collapsible Sections */
+.section-collapse {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: #f9f9f9;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  font-size: 14px;
+  list-style: none;
+}
+
+.section-header::-webkit-details-marker {
+  display: none;
+}
+
+.section-title {
+  flex: 1;
+}
+
+.collapse-arrow {
+  font-size: 12px;
+  transition: transform 0.2s;
+}
+
+details[open] .collapse-arrow {
+  transform: rotate(180deg);
+}
+
+.section-content {
+  padding: 0 16px 16px 16px;
+  font-size: 13px;
+}
+
+.section-intro {
+  margin-bottom: 12px;
+  color: #666;
+}
+
+/* Essential Items */
+.essential-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.essential-item:last-child {
+  border-bottom: none;
+}
+
+.essential-item h4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.essential-item p {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Privacy Choices Section */
+.privacy-choices-section {
+  margin-bottom: 12px;
+}
+
+.privacy-choices-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.data-choice-notice {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.data-choice-notice strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.data-choice-notice p {
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Toggle Items */
+.toggle-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e5e5;
+  gap: 16px;
+}
+
+.toggle-item:last-of-type {
+  border-bottom: none;
+}
+
+.toggle-info {
+  flex: 1;
+}
+
+.toggle-info h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.toggle-info p {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 28px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #3b82f6;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+input:disabled + .slider {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary,
+.btn-outline {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: white;
+  flex: 1;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
+
+.btn-primary:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #d1d5db;
+  flex: 1;
+}
+
+.btn-secondary:hover {
+  background: #f9fafb;
+}
+
+.btn-outline {
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #d1d5db;
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+.btn-outline:hover {
+  background: #f9fafb;
+}
+
+/* Data Rights */
+.data-right-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.data-right-item:last-child {
+  border-bottom: none;
+}
+
+.data-right-item h4 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+/* GPC Info */
+.gpc-info {
+  background: #fef3c7;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+  font-size: 12px;
+}
+
+.gpc-detail {
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  background: #f9f9f9;
+  border-left: 3px solid #e5e5e5;
+  margin-bottom: 8px;
+}
+
+.gpc-detail:last-child {
+  margin-bottom: 0;
+}
+
+.gpc-detail strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #1a1a1a;
+  font-size: 13px;
+}
+
+/* Legal Links */
+.legal-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.legal-links a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.legal-links a:hover {
+  text-decoration: underline;
+}
+
+.last-updated {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Footer Buttons */
+.footer-buttons {
+  display: flex;
+  gap: 8px;
+  padding: 16px 0 0 0;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 16px;
+}
+
+/* Error State */
+.error-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.error-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.error-state h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.error-state p {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: #1a1a1a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  max-width: 90%;
+  text-align: center;
+}
+
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .privacy-container {
+    padding: 16px;
+  }
+
+  .privacy-header h1 {
+    font-size: 20px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .footer-buttons {
+    flex-direction: column-reverse;
+  }
+}
+
+  </style>
+</head>
+<body>
+<div class="privacy-container">
+
+  <!-- Header -->
+  <div class="privacy-header">
+    <h1><img src="/static/images/privacy-choices-icon.svg" alt="" style="vertical-align: -2px; margin-right: 8px;" />Le tue scelte in materia di privacy</h1>
+    <p class="subtitle">Controlla come DeepAI utilizza le tue informazioni e come personalizziamo la tua esperienza.</p>
+  </div>
+
+  <!-- Loading State -->
+  <div id="loading-state" class="loading-state">
+    <div class="spinner"></div>
+    <p>Caricamento delle tue preferenze in corso...</p>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" style="display: none;">
+
+    <!-- Intro Text -->
+    <p class="intro-text">Controlla come usiamo i tuoi dati. Gli utilizzi essenziali sono sempre attivi; quelli opzionali puoi disattivarli facendo clic sull'interruttore qui sotto.</p>
+
+    <!-- Essential Data Use Section -->
+    <details class="section-collapse" open>
+      <summary class="section-header">
+        <span class="section-title">Utilizzo essenziale dei dati (sempre attivo)</span>
+        <span class="collapse-arrow">▲</span>
+      </summary>
+      <div class="section-content">
+        <div class="essential-item">
+          <h4>Erogazione dei servizi e gestione dell'account</h4>
+          <p>Necessario per garantire le funzionalità principali e gestire il tuo account.</p>
+        </div>
+        <div class="essential-item">
+          <h4>Sicurezza e prevenzione delle frodi</h4>
+          <p>È necessario per proteggere te e DeepAI da abusi e minacce alla sicurezza.</p>
+        </div>
+        <div class="essential-item">
+          <h4>Conformità normativa</h4>
+          <p>È necessario per adempiere agli obblighi di legge e rispondere alle richieste legittime.</p>
+        </div>
+      </div>
+    </details>
+
+    <!-- Your Privacy Choices Section -->
+    <div class="privacy-choices-section">
+      <h2>Le tue preferenze sulla privacy</h2>
+      <div class="data-choice-notice">
+        <strong>I tuoi dati. La tua scelta.</strong>
+        <p>Condividiamo i dati personali con terze parti per la pubblicità mirata su siti web e app. Ciò potrebbe costituire una "vendita o condivisione" ai sensi delle leggi sulla privacy. Puoi disattivare questa opzione qui sotto.</p>
+      </div>
+
+      <!-- Toggle Items -->
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>Analisi e prestazioni</h3>
+          <p>Misura l'utilizzo per migliorare l'affidabilità e l'esperienza d'uso.</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-analytics">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>Pubblicità personalizzata e mirata</h3>
+          <p>Ti mostriamo annunci pertinenti in base alla tua attività. Disattivando questa opzione, non consentirai la vendita o la condivisione dei tuoi dati.</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-ads">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>Pubblico personalizzato (Facebook, TikTok, ecc.)</h3>
+          <p>Consentici di usare i tuoi dati di contatto per la pubblicità mirata sulle piattaforme social.</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-audiences">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>Condivisione con terze parti</h3>
+          <p>Consentici di condividere i tuoi dati con partner esterni.</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-third_party">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>Addestramento dei modelli di IA e miglioramento dei prodotti</h3>
+          <p>Consentici di utilizzare i tuoi dati per sviluppare e migliorare i nostri modelli e prodotti di IA.</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-training">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>Email di marketing e notifiche</h3>
+          <p>Ricevi aggiornamenti sui prodotti, consigli e messaggi promozionali.</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-marketing">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button type="button" id="btn-reject" class="btn-secondary">Rifiuta i non essenziali</button>
+        <button type="button" id="btn-allow" class="btn-primary">Consenti tutti</button>
+      </div>
+    </div>
+
+    <!-- Your Data Rights Section -->
+    <!--
+    <details class="section-collapse">
+      <summary class="section-header">
+        <span class="section-title">Your data rights</span>
+        <span class="collapse-arrow">▼</span>
+      </summary>
+      <div class="section-content">
+        <p class="section-intro">Request access, correction, deletion, or export of your data.</p>
+
+        <div class="data-right-item">
+          <h4>Access your data</h4>
+          <button type="button" class="btn-outline" id="btn-access">Request access</button>
+        </div>
+
+        <div class="data-right-item">
+          <h4>Correct your data</h4>
+          <button type="button" class="btn-outline" id="btn-correct">Request correction</button>
+        </div>
+
+        <div class="data-right-item">
+          <h4>Delete your data</h4>
+          <button type="button" class="btn-outline" id="btn-delete">Request deletion</button>
+        </div>
+
+        <div class="data-right-item">
+          <h4>Download your data</h4>
+          <button type="button" class="btn-outline" id="btn-download">Request export</button>
+        </div>
+
+        <div class="data-right-item">
+          <h4>Contact privacy team</h4>
+          <button type="button" class="btn-outline" id="btn-contact">Contact us</button>
+        </div>
+      </div>
+    </details>
+    -->
+
+    <!-- GPC Section -->
+    <details class="section-collapse">
+      <summary class="section-header">
+        <span class="section-title">Global Privacy Control (GPC)</span>
+        <span class="collapse-arrow">▼</span>
+      </summary>
+      <div class="section-content">
+        <p>Puoi disattivare questa opzione attivando un segnale di privacy del browser, come Global Privacy Control, prima di visitare il nostro sito web.</p>
+
+        <div class="gpc-info">
+          <strong>Importante:</strong> a seconda che tu abbia effettuato l'accesso al tuo account DeepAI o meno:
+        </div>
+
+        <div class="gpc-detail">
+          <strong>Se hai effettuato l'accesso:</strong> applicheremo la tua preferenza di disattivazione al tuo account su tutti i dispositivi su cui hai effettuato l'accesso.
+        </div>
+
+        <div class="gpc-detail">
+          <strong>Se non hai effettuato l'accesso:</strong> la tua disattivazione vale solo per la pubblicità basata sui cookie su questo specifico browser e dispositivo.
+        </div>
+      </div>
+    </details>
+
+    <!-- Legal & Policy Information Section -->
+    <details class="section-collapse">
+      <summary class="section-header">
+        <span class="section-title">Informazioni legali e normative</span>
+        <span class="collapse-arrow">▼</span>
+      </summary>
+      <div class="section-content">
+        <div class="legal-links">
+          <a href="/privacy-policy" target="_blank">Informativa sulla privacy</a>
+          <a href="/privacy-policy#state-privacy" target="_blank">Informativa sulla privacy per la California</a>
+        </div>
+        <p class="last-updated">Ultimo aggiornamento: 23 novembre 2025</p>
+      </div>
+    </details>
+
+  </div>
+
+  <!-- Error State -->
+  <div id="error-state" class="error-state" style="display: none;">
+    <div class="error-icon">⚠️</div>
+    <h3>Impossibile caricare le preferenze</h3>
+    <p id="error-message">Prova di nuovo più tardi.</p>
+    <button type="button" id="btn-retry" class="btn-primary">Riprova</button>
+  </div>
+
+  <!-- Footer Buttons -->
+  <div class="footer-buttons" id="footer-buttons" style="display: none;">
+    <button type="button" id="btn-save" class="btn-primary">Salva ed esci</button>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <span id="toast-message"></span>
+  </div>
+
+</div>
+
+<script src="/static/CACHE/js/output.c0673ef23930.js"></script>
+
+</body>
+</html>

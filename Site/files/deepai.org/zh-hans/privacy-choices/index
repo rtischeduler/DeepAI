@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="zh-hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>您的隐私选项 - DeepAI</title>
+
+  <meta name="description" content="管理您在 DeepAI 中的隐私偏好和数据收集设置。">
+  <link rel="canonical" href="https://deepai.org/zh-hans/privacy-choices/">
+
+  <script>
+    const app_base_url = 'https://api.deepai.org';
+    const contact_url = '/contact';
+  </script>
+  <script src="/zh-hans/i18n.23afb3ca8499.js"></script>
+
+  <style>
+    /* Privacy Modal - Comprehensive Design */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.privacy-container {
+  width: 100%;
+  padding: 24px;
+  min-height: 100%;
+}
+
+/* Header */
+.privacy-header {
+  margin-bottom: 16px;
+}
+
+.privacy-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.privacy-header .subtitle {
+  font-size: 13px;
+  color: #666;
+  font-weight: normal;
+}
+
+/* Loading State */
+.loading-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3b82f6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Main Content */
+#main-content {
+  flex: 1;
+}
+
+.intro-text {
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Collapsible Sections */
+.section-collapse {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: #f9f9f9;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  font-size: 14px;
+  list-style: none;
+}
+
+.section-header::-webkit-details-marker {
+  display: none;
+}
+
+.section-title {
+  flex: 1;
+}
+
+.collapse-arrow {
+  font-size: 12px;
+  transition: transform 0.2s;
+}
+
+details[open] .collapse-arrow {
+  transform: rotate(180deg);
+}
+
+.section-content {
+  padding: 0 16px 16px 16px;
+  font-size: 13px;
+}
+
+.section-intro {
+  margin-bottom: 12px;
+  color: #666;
+}
+
+/* Essential Items */
+.essential-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.essential-item:last-child {
+  border-bottom: none;
+}
+
+.essential-item h4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.essential-item p {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Privacy Choices Section */
+.privacy-choices-section {
+  margin-bottom: 12px;
+}
+
+.privacy-choices-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.data-choice-notice {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.data-choice-notice strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.data-choice-notice p {
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Toggle Items */
+.toggle-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e5e5;
+  gap: 16px;
+}
+
+.toggle-item:last-of-type {
+  border-bottom: none;
+}
+
+.toggle-info {
+  flex: 1;
+}
+
+.toggle-info h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.toggle-info p {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 28px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #3b82f6;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+input:disabled + .slider {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary,
+.btn-outline {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: white;
+  flex: 1;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
+
+.btn-primary:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #d1d5db;
+  flex: 1;
+}
+
+.btn-secondary:hover {
+  background: #f9fafb;
+}
+
+.btn-outline {
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #d1d5db;
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+.btn-outline:hover {
+  background: #f9fafb;
+}
+
+/* Data Rights */
+.data-right-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.data-right-item:last-child {
+  border-bottom: none;
+}
+
+.data-right-item h4 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+/* GPC Info */
+.gpc-info {
+  background: #fef3c7;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+  font-size: 12px;
+}
+
+.gpc-detail {
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  background: #f9f9f9;
+  border-left: 3px solid #e5e5e5;
+  margin-bottom: 8px;
+}
+
+.gpc-detail:last-child {
+  margin-bottom: 0;
+}
+
+.gpc-detail strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #1a1a1a;
+  font-size: 13px;
+}
+
+/* Legal Links */
+.legal-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.legal-links a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.legal-links a:hover {
+  text-decoration: underline;
+}
+
+.last-updated {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Footer Buttons */
+.footer-buttons {
+  display: flex;
+  gap: 8px;
+  padding: 16px 0 0 0;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 16px;
+}
+
+/* Error State */
+.error-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.error-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.error-state h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.error-state p {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: #1a1a1a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  max-width: 90%;
+  text-align: center;
+}
+
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .privacy-container {
+    padding: 16px;
+  }
+
+  .privacy-header h1 {
+    font-size: 20px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .footer-buttons {
+    flex-direction: column-reverse;
+  }
+}
+
+  </style>
+</head>
+<body>
+<div class="privacy-container">
+
+  <!-- Header -->
+  <div class="privacy-header">
+    <h1><img src="/static/images/privacy-choices-icon.svg" alt="" style="vertical-align: -2px; margin-right: 8px;" />您的隐私选项</h1>
+    <p class="subtitle">管理 DeepAI 如何使用您的信息，以及我们如何为您提供个性化体验。</p>
+  </div>
+
+  <!-- Loading State -->
+  <div id="loading-state" class="loading-state">
+    <div class="spinner"></div>
+    <p>正在加载您的偏好设置……</p>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" style="display: none;">
+
+    <!-- Intro Text -->
+    <p class="intro-text">控制我们对您信息的使用方式。必要用途始终处于启用状态；您可通过点击下方的切换按钮关闭可选用途。</p>
+
+    <!-- Essential Data Use Section -->
+    <details class="section-collapse" open>
+      <summary class="section-header">
+        <span class="section-title">基本数据使用（始终开启）</span>
+        <span class="collapse-arrow">▲</span>
+      </summary>
+      <div class="section-content">
+        <div class="essential-item">
+          <h4>服务交付与账户管理</h4>
+          <p>用于提供核心功能并管理您的账户。</p>
+        </div>
+        <div class="essential-item">
+          <h4>安全与防欺诈</h4>
+          <p>此举旨在保护您和 DeepAI 免受滥用及安全威胁。</p>
+        </div>
+        <div class="essential-item">
+          <h4>法律合规</h4>
+          <p>为履行法律义务并回应合法请求所必需。</p>
+        </div>
+      </div>
+    </details>
+
+    <!-- Your Privacy Choices Section -->
+    <div class="privacy-choices-section">
+      <h2>您的隐私选项</h2>
+      <div class="data-choice-notice">
+        <strong>您的数据。您的选择。</strong>
+        <p>我们会与第三方共享个人信息，以便在网站和应用程序上投放定向广告。根据隐私法律，此行为可能构成“出售或共享”。您可以在下方选择退出。</p>
+      </div>
+
+      <!-- Toggle Items -->
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>分析与性能</h3>
+          <p>通过测量使用情况来提高可靠性和用户体验。</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-analytics">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>个性化广告与定向广告</h3>
+          <p>根据您的活动展示相关广告。关闭此功能即表示您选择退出数据销售/共享。</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-ads">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>自定义受众（Facebook、TikTok 等）</h3>
+          <p>允许我们使用您的联系信息，在社交平台上进行匹配广告投放。</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-audiences">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>第三方共享</h3>
+          <p>允许我们与第三方合作伙伴共享您的数据。</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-third_party">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>AI 模型训练与产品改进</h3>
+          <p>允许我们使用您的数据来开发和改进我们的 AI 模型及产品。</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-training">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>营销邮件与通知</h3>
+          <p>接收产品更新、使用技巧和促销信息。</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-marketing">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button type="button" id="btn-reject" class="btn-secondary">拒绝非必要用途</button>
+        <button type="button" id="btn-allow" class="btn-primary">全部允许</button>
+      </div>
+    </div>
+
+    <!-- Your Data Rights Section -->
+    <!--
+    <details class="section-collapse">
+      <summary class="section-header">
+        <span class="section-title">Your data rights</span>
+        <span class="collapse-arrow">▼</span>
+      </summary>
+      <div class="section-content">
+        <p class="section-intro">Request access, correction, deletion, or export of your data.</p>
+
+        <div class="data-right-item">
+          <h4>Access your data</h4>
+          <button type="button" class="btn-outline" id="btn-access">Request access</button>
+        </div>
+
+        <div class="data-right-item">
+          <h4>Correct your data</h4>
+          <button type="button" class="btn-outline" id="btn-correct">Request correction</button>
+        </div>
+
+        <div class="data-right-item">
+          <h4>Delete your data</h4>
+          <button type="button" class="btn-outline" id="btn-delete">Request deletion</button>
+        </div>
+
+        <div class="data-right-item">
+          <h4>Download your data</h4>
+          <button type="button" class="btn-outline" id="btn-download">Request export</button>
+        </div>
+
+        <div class="data-right-item">
+          <h4>Contact privacy team</h4>
+          <button type="button" class="btn-outline" id="btn-contact">Contact us</button>
+        </div>
+      </div>
+    </details>
+    -->
+
+    <!-- GPC Section -->
+    <details class="section-collapse">
+      <summary class="section-header">
+        <span class="section-title">全局隐私控制（GPC）</span>
+        <span class="collapse-arrow">▼</span>
+      </summary>
+      <div class="section-content">
+        <p>您可以在访问我们的网站之前，启用全局隐私控制（Global Privacy Control）等浏览器隐私信号来选择退出。</p>
+
+        <div class="gpc-info">
+          <strong>重要提示：</strong>这取决于您是否已登录 DeepAI 账户：
+        </div>
+
+        <div class="gpc-detail">
+          <strong>如果已登录：</strong>我们会将您的退出偏好设置应用于您的账户，并在您已登录的所有设备上生效。
+        </div>
+
+        <div class="gpc-detail">
+          <strong>如果未登录：</strong>您的退出设置仅适用于此浏览器和设备上基于 Cookie 的广告。
+        </div>
+      </div>
+    </details>
+
+    <!-- Legal & Policy Information Section -->
+    <details class="section-collapse">
+      <summary class="section-header">
+        <span class="section-title">法律与政策信息</span>
+        <span class="collapse-arrow">▼</span>
+      </summary>
+      <div class="section-content">
+        <div class="legal-links">
+          <a href="/privacy-policy" target="_blank">隐私政策</a>
+          <a href="/privacy-policy#state-privacy" target="_blank">加利福尼亚州隐私声明</a>
+        </div>
+        <p class="last-updated">最后更新：2025年11月23日</p>
+      </div>
+    </details>
+
+  </div>
+
+  <!-- Error State -->
+  <div id="error-state" class="error-state" style="display: none;">
+    <div class="error-icon">⚠️</div>
+    <h3>无法加载首选项</h3>
+    <p id="error-message">请稍后再试。</p>
+    <button type="button" id="btn-retry" class="btn-primary">重试</button>
+  </div>
+
+  <!-- Footer Buttons -->
+  <div class="footer-buttons" id="footer-buttons" style="display: none;">
+    <button type="button" id="btn-save" class="btn-primary">保存并退出</button>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <span id="toast-message"></span>
+  </div>
+
+</div>
+
+<script src="/static/CACHE/js/output.c0673ef23930.js"></script>
+
+</body>
+</html>

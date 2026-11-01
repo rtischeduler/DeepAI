@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeepAI Client</title>
+<style>
+:root {
+  --bg: #0f1013;
+  --panel: #17181d;
+  --panel2: #1e2027;
+  --line: #2a2d36;
+  --text: #e8e9ee;
+  --muted: #8b8f9c;
+  --accent: #8f37ff;
+  --accent2: #a964ff;
+  --ok: #3ecf8e;
+  --bad: #ff5d6c;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+header h1 { font-size: 16px; margin: 0 6px 0 0; letter-spacing: .2px; }
+.dot { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); flex: none; }
+.dot.ok { background: var(--ok); }
+.dot.bad { background: var(--bad); }
+.dot.work { background: #f5b84a; animation: pulse 1s infinite; }
+@keyframes pulse { 50% { opacity: .35; } }
+#status { color: var(--muted); font-size: 12.5px; max-width: 34vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.spacer { flex: 1; }
+select, input, textarea, button { font: inherit; color: var(--text); }
+select, input[type="email"], input[type="password"] {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 7px 10px;
+  outline: none;
+}
+select:focus, input:focus, textarea:focus { border-color: var(--accent); }
+button {
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+button:hover:not(:disabled) { border-color: var(--accent); }
+button:disabled { opacity: .5; cursor: default; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+button.primary:hover:not(:disabled) { background: var(--accent2); }
+#model { max-width: 220px; }
+#chat { flex: 1; overflow-y: auto; padding: 18px 14px 8px; scroll-behavior: smooth; }
+.wrap { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+.empty { text-align: center; color: var(--muted); margin-top: 18vh; }
+.empty h2 { color: var(--text); margin: 0 0 6px; font-size: 22px; }
+.msg { display: flex; flex-direction: column; gap: 6px; }
+.msg .who { font-size: 11.5px; text-transform: uppercase; letter-spacing: .6px; color: var(--muted); }
+.msg .body {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 14px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+.msg.user .body { background: #231a35; border-color: #3a2a59; }
+.msg.error .body { border-color: var(--bad); color: #ffc4ca; }
+.msg .body pre {
+  background: #0b0b0e;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  overflow-x: auto;
+  white-space: pre;
+  margin: 8px 0;
+}
+.msg .body code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
+.msg .body :not(pre) > code { background: #0b0b0e; padding: 1px 5px; border-radius: 5px; }
+.msg .body img { max-width: 100%; border-radius: 8px; display: block; margin-top: 6px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 12.5px;
+  max-width: 100%;
+}
+.chip span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 200px; }
+.chip.up { border-color: #f5b84a; }
+.chip.fail { border-color: var(--bad); }
+.chip button { background: none; border: 0; padding: 0 2px; color: var(--muted); }
+.composer { border-top: 1px solid var(--line); background: var(--panel); padding: 10px 14px 14px; }
+.composer .wrap { gap: 8px; }
+.row { display: flex; gap: 8px; align-items: flex-end; }
+textarea {
+  flex: 1;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  resize: none;
+  max-height: 200px;
+  min-height: 44px;
+  outline: none;
+}
+#attach { padding: 10px 12px; }
+#send { padding: 10px 16px; }
+dialog {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  width: min(380px, 92vw);
+}
+dialog::backdrop { background: rgba(0, 0, 0, .6); }
+dialog h2 { margin: 0 0 12px; font-size: 18px; }
+dialog form { display: flex; flex-direction: column; gap: 10px; }
+dialog .err { color: var(--bad); font-size: 13px; min-height: 18px; }
+dialog .actions { display: flex; gap: 8px; justify-content: flex-end; }
+.hint { color: var(--muted); font-size: 12px; }
+@media (max-width: 560px) {
+  #status { display: none; }
+  #model { max-width: 140px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>DeepAI</h1>
+  <span class="dot work" id="dot"></span>
+  <span id="status">Starting…</span>
+  <span class="spacer"></span>
+  <select id="model" disabled><option>Loading models…</option></select>
+  <button id="newChat" title="Start a new chat">New</button>
+  <button id="account">Sign in</button>
+</header>
+
+<main id="chat"><div class="wrap" id="log"></div></main>
+
+<div class="composer">
+  <div class="wrap">
+    <div class="chips" id="chips"></div>
+    <div class="row">
+      <button id="attach" title="Attach files" disabled>＋</button>
+      <input type="file" id="file" multiple hidden>
+      <textarea id="input" rows="1" placeholder="Message DeepAI…" disabled></textarea>
+      <button class="primary" id="send" disabled>Send</button>
+    </div>
+    <div class="hint" id="hint">Requests go through the Singuloxy wisp proxy.</div>
+  </div>
+</div>
+
+<dialog id="loginDialog">
+  <form method="dialog" id="loginForm">
+    <h2>Sign in</h2>
+    <input type="email" id="email" placeholder="Email" autocomplete="username" required>
+    <input type="password" id="password" placeholder="Password" autocomplete="current-password" required>
+    <div class="err" id="loginErr"></div>
+    <div class="actions">
+      <button type="button" id="loginCancel">Cancel</button>
+      <button type="submit" class="primary" id="loginSubmit">Sign in</button>
+    </div>
+  </form>
+</dialog>
+
+<script type="module">
+import { createProxy } from "./src/proxy.mjs";
+import { createClient, createCookieJar } from "./src/client.mjs";
+
+const $ = (id) => document.getElementById(id);
+const el = {
+  dot: $("dot"), status: $("status"), model: $("model"), newChat: $("newChat"), account: $("account"),
+  chat: $("chat"), log: $("log"), chips: $("chips"), attach: $("attach"), file: $("file"),
+  input: $("input"), send: $("send"), hint: $("hint"),
+  dialog: $("loginDialog"), form: $("loginForm"), email: $("email"), password: $("password"),
+  err: $("loginErr"), submit: $("loginSubmit"), cancel: $("loginCancel"),
+};
+
+const COOKIE_KEY = "deepai.cookies";
+const MODEL_KEY = "deepai.model";
+
+const store = {
+  get(key) { try { return JSON.parse(localStorage.getItem(key)); } catch { return null; } },
+  set(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); } catch {} },
+  del(key) { try { localStorage.removeItem(key); } catch {} },
+};
+
+const state = {
+  client: null,
+  user: null,
+  models: [],
+  history: [],
+  sessionUuid: null,
+  attachments: [],
+  busy: false,
+  abort: null,
+};
+
+function setStatus(text, mode) {
+  el.status.textContent = text;
+  el.dot.className = "dot " + (mode || "");
+}
+
+function escapeHtml(text) {
+  return text.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
+
+function render(text) {
+  const parts = text.split(/```/);
+  return parts.map((part, i) => {
+    if (i % 2 === 1) {
+      const nl = part.indexOf("\n");
+      const code = nl >= 0 && /^[\w+#.-]*$/.test(part.slice(0, nl).trim()) ? part.slice(nl + 1) : part;
+      return "<pre><code>" + escapeHtml(code.replace(/\n$/, "")) + "</code></pre>";
+    }
+    let html = escapeHtml(part);
+    html = html.replace(/!\[([^\]]*)\]\((https?:\/\/[^\s)]+)\)/g, '<img alt="$1" src="$2">');
+    html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color:#c9a0ff">$1</a>');
+    html = html.replace(/`([^`\n]+)`/g, "<code>$1</code>");
+    html = html.replace(/\*\*([^*\n]+)\*\*/g, "<strong>$1</strong>");
+    return html;
+  }).join("");
+}
+
+function addMessage(role, text, extra = "") {
+  el.log.querySelector(".empty")?.remove();
+  const node = document.createElement("div");
+  node.className = "msg " + role + (extra ? " " + extra : "");
+  const who = document.createElement("div");
+  who.className = "who";
+  who.textContent = role === "user" ? "You" : role === "error" ? "Error" : "DeepAI";
+  const body = document.createElement("div");
+  body.className = "body";
+  body.innerHTML = render(text);
+  node.append(who, body);
+  el.log.append(node);
+  el.chat.scrollTop = el.chat.scrollHeight;
+  return body;
+}
+
+function showEmpty() {
+  el.log.innerHTML = '<div class="empty"><h2>DeepAI</h2><div>Pick a model and start chatting.</div></div>';
+}
+
+function updateControls() {
+  const ready = Boolean(state.client) && state.models.length > 0;
+  const uploading = state.attachments.some((a) => a.status === "up");
+  el.model.disabled = !ready || state.busy;
+  el.attach.disabled = !ready || state.busy;
+  el.input.disabled = !ready;
+  el.send.disabled = !ready || uploading;
+  el.send.textContent = state.busy ? "Stop" : "Send";
+  el.account.textContent = state.user ? (state.user.email || state.user.username || "Account") + " · Sign out" : "Sign in";
+}
+
+function persistCookies() {
+  if (state.client) store.set(COOKIE_KEY, state.client.cookies.toObject());
+}
+
+function renderChips() {
+  el.chips.innerHTML = "";
+  state.attachments.forEach((item, index) => {
+    const chip = document.createElement("div");
+    chip.className = "chip " + item.status;
+    const name = document.createElement("span");
+    name.textContent = (item.status === "up" ? "Uploading " : item.status === "fail" ? "Failed " : "") + item.name;
+    const remove = document.createElement("button");
+    remove.textContent = "✕";
+    remove.title = "Remove";
+    remove.addEventListener("click", () => {
+      state.attachments.splice(index, 1);
+      renderChips();
+      updateControls();
+    });
+    chip.append(name, remove);
+    el.chips.append(chip);
+  });
+}
+
+async function addFiles(files) {
+  for (const file of files) {
+    const item = { name: file.name, status: "up", uuid: null };
+    state.attachments.push(item);
+    renderChips();
+    updateControls();
+    try {
+      const attachment = await state.client.uploadAttachment(file, file.name);
+      item.uuid = attachment.uuid;
+      item.status = "ok";
+    } catch (error) {
+      item.status = "fail";
+      addMessage("error", "Upload failed for " + file.name + ": " + (error.message || error));
+    }
+    renderChips();
+    updateControls();
+  }
+}
+
+async function loadModels() {
+  try {
+    state.models = await state.client.listModels();
+  } catch (error) {
+    addMessage("error", "Could not load models: " + (error.message || error));
+    state.models = [];
+  }
+  const saved = store.get(MODEL_KEY);
+  el.model.innerHTML = "";
+  for (const model of state.models) {
+    const option = document.createElement("option");
+    option.value = model.id;
+    option.textContent = model.label + (model.locked && !state.user ? " 🔒" : "");
+    el.model.append(option);
+  }
+  if (saved && state.models.some((m) => m.id === saved)) el.model.value = saved;
+}
+
+async function refreshUser() {
+  try {
+    state.user = await state.client.me();
+  } catch {
+    state.user = null;
+  }
+  if (!state.user) store.del(COOKIE_KEY);
+  persistCookies();
+  updateControls();
+}
+
+function newChat() {
+  if (state.busy && state.abort) state.abort.abort();
+  state.history = [];
+  state.sessionUuid = state.client ? state.client.sessionId() : null;
+  state.attachments = [];
+  renderChips();
+  showEmpty();
+  updateControls();
+}
+
+async function send() {
+  if (state.busy) {
+    if (state.abort) state.abort.abort();
+    return;
+  }
+  const text = el.input.value.trim();
+  if (!text) return;
+  if (state.attachments.some((a) => a.status === "up")) return;
+  const attached = state.attachments.filter((a) => a.status === "ok");
+  const names = attached.map((a) => a.name);
+  addMessage("user", text + (names.length ? "\n\n📎 " + names.join(", ") : ""));
+  state.history.push({ role: "user", content: text });
+  el.input.value = "";
+  el.input.style.height = "auto";
+  state.attachments = state.attachments.filter((a) => a.status === "fail");
+  renderChips();
+
+  state.busy = true;
+  state.abort = new AbortController();
+  updateControls();
+  setStatus("Generating…", "work");
+  const body = addMessage("assistant", "…");
+  let answer = "";
+  try {
+    const stream = state.client.chat({
+      model: el.model.value,
+      messages: state.history,
+      attachments: attached.map((a) => a.uuid),
+      sessionUuid: state.sessionUuid,
+      signal: state.abort.signal,
+    });
+    for await (const part of stream) {
+      if (part.type === "text") {
+        answer += part.value;
+        body.innerHTML = render(answer);
+      } else {
+        answer = typeof part.value === "string" ? part.value : JSON.stringify(part.value, null, 2);
+        body.innerHTML = render(answer);
+      }
+      el.chat.scrollTop = el.chat.scrollHeight;
+    }
+    if (answer) state.history.push({ role: "assistant", content: answer });
+    else {
+      body.parentElement.remove();
+      state.history.pop();
+    }
+    setStatus("Connected via " + shortWisp(), "ok");
+  } catch (error) {
+    if (error.name === "AbortError") {
+      if (answer) state.history.push({ role: "assistant", content: answer });
+      setStatus("Stopped", "ok");
+    } else {
+      body.parentElement.remove();
+      state.history.pop();
+      const code = error.code || "";
+      if (code === "anonymous try it exceeded") {
+        addMessage("error", "Free anonymous limit reached. Sign in to keep going.");
+        openLogin();
+      } else if (error.status === 401 || error.status === 403) {
+        addMessage("error", "Request was refused (" + error.status + "). " + (code || ""));
+      } else {
+        addMessage("error", error.message || String(error));
+      }
+      setStatus("Error", "bad");
+    }
+  } finally {
+    state.busy = false;
+    state.abort = null;
+    persistCookies();
+    updateControls();
+    el.input.focus();
+  }
+}
+
+let wispName = "";
+const shortWisp = () => wispName || "proxy";
+
+function openLogin() {
+  el.err.textContent = "";
+  el.dialog.showModal();
+  el.email.focus();
+}
+
+async function boot() {
+  showEmpty();
+  setStatus("Loading proxy…", "work");
+  let proxy;
+  try {
+    proxy = await createProxy({ say: (t) => setStatus(t, "work"), log: (...a) => console.log(...a) });
+  } catch (error) {
+    setStatus("Proxy failed: " + (error.message || error), "bad");
+    addMessage("error", "Could not start the proxy: " + (error.message || error));
+    return;
+  }
+  wispName = proxy.wisp.replace(/^wss:\/\//, "").replace(/\/$/, "");
+  const jar = createCookieJar(store.get(COOKIE_KEY) || {});
+  state.client = createClient({ fetch: proxy.fetch, cookies: jar, log: (...a) => console.log(...a) });
+  state.sessionUuid = state.client.sessionId();
+  setStatus("Loading models…", "work");
+  await Promise.all([loadModels(), refreshUser()]);
+  if (state.models.length) setStatus("Connected via " + shortWisp(), "ok");
+  else setStatus("No models loaded", "bad");
+  updateControls();
+  el.input.focus();
+}
+
+el.send.addEventListener("click", send);
+el.input.addEventListener("keydown", (event) => {
+  if (event.key === "Enter" && !event.shiftKey) {
+    event.preventDefault();
+    send();
+  }
+});
+el.input.addEventListener("input", () => {
+  el.input.style.height = "auto";
+  el.input.style.height = Math.min(el.input.scrollHeight, 200) + "px";
+});
+el.model.addEventListener("change", () => store.set(MODEL_KEY, el.model.value));
+el.newChat.addEventListener("click", newChat);
+el.attach.addEventListener("click", () => el.file.click());
+el.file.addEventListener("change", () => {
+  const files = [...el.file.files];
+  el.file.value = "";
+  if (files.length) addFiles(files);
+});
+document.addEventListener("paste", (event) => {
+  const files = [...(event.clipboardData?.files || [])];
+  if (files.length && state.client && !state.busy) {
+    event.preventDefault();
+    addFiles(files);
+  }
+});
+document.addEventListener("dragover", (event) => event.preventDefault());
+document.addEventListener("drop", (event) => {
+  event.preventDefault();
+  const files = [...(event.dataTransfer?.files || [])];
+  if (files.length && state.client && !state.busy) addFiles(files);
+});
+
+el.account.addEventListener("click", async () => {
+  if (!state.client) return;
+  if (state.user) {
+    await state.client.logout();
+    state.user = null;
+    store.del(COOKIE_KEY);
+    await loadModels();
+    updateControls();
+    setStatus("Signed out", "ok");
+  } else {
+    openLogin();
+  }
+});
+el.cancel.addEventListener("click", () => el.dialog.close());
+el.form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  el.err.textContent = "";
+  el.submit.disabled = true;
+  el.submit.textContent = "Signing in…";
+  try {
+    state.user = await state.client.login(el.email.value.trim(), el.password.value);
+    el.password.value = "";
+    persistCookies();
+    el.dialog.close();
+    await loadModels();
+    setStatus("Signed in", "ok");
+  } catch (error) {
+    el.err.textContent = error.message || String(error);
+  } finally {
+    el.submit.disabled = false;
+    el.submit.textContent = "Sign in";
+    updateControls();
+  }
+});
+
+boot();
+</script>
+</body>
+</html>

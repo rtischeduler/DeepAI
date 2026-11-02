@@ -107,7 +107,7 @@ export function createClient({
   language = "en",
   userAgent = (globalThis.navigator && navigator.userAgent) || "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
   cookies = createCookieJar(),
-  log = () => {},
+  log = (...args) => console.log(...args),
 } = {}) {
   const baseHeaders = (extra = {}) => {
     const headers = { "User-Agent": userAgent, "Origin": site, "Referer": site + "/chat", ...extra };
@@ -117,23 +117,34 @@ export function createClient({
     return headers;
   };
 
+  const describeBody = (b) => {
+    if (b == null) return "none";
+    if (typeof b === "string") return "string(" + b.length + ")";
+    if (typeof FormData !== "undefined" && b instanceof FormData) {
+      return "FormData{" + [...b.entries()].map(([k, v]) => k + "=" + (typeof v === "string" ? (v.length > 120 ? v.slice(0, 120) + "..." : v) : "File(" + (v.name || "") + "," + (v.type || "") + "," + (v.size || 0) + "b)")).join(", ") + "}";
+    }
+    return String(b.constructor && b.constructor.name || "body");
+  };
+
   async function raw(path, init = {}) {
     const url = path.startsWith("http") ? path : api + path;
     const response = await send(url, { redirect: "follow", ...init, headers: baseHeaders(init.headers) });
     cookies.absorb(response.headers);
-    log("[deepai]", init.method || "GET", path.split("?")[0], response.status);
+    log("[deepai]", init.method || "GET", url, response.status, response.headers.get("content-type") || "", "cookies:", Object.keys(cookies.toObject()).join(",") || "none", "body:", describeBody(init.body));
     return response;
   }
 
   async function json(path, init) {
     const response = await raw(path, init);
+    const text = await response.text().catch(() => "");
     let body = null;
     try {
-      body = await response.json();
+      body = JSON.parse(text);
     } catch {}
     if (!response.ok) {
+      log("[deepai] error body", response.status, path.split("?")[0], text.slice(0, 2000));
       const code = body && (body.status || body.error || body.detail) || "";
-      throw new DeepAIError(String(code || "HTTP " + response.status), { status: response.status, code: String(code), body });
+      throw new DeepAIError(String(code || "HTTP " + response.status + (text ? ": " + text.replace(/\s+/g, " ").slice(0, 200) : "")), { status: response.status, code: String(code), body });
     }
     return body;
   }
@@ -195,7 +206,9 @@ export function createClient({
       const data = new FormData();
       if (name) data.append("file", file, name);
       else data.append("file", file);
+      log("[deepai] upload", name || file.name || "", file.type || "", file.size || 0, "bytes");
       const body = await json("/chat_attachments/upload", { method: "POST", body: data });
+      log("[deepai] upload response", JSON.stringify(body));
       if (!body.success || !body.attachment) throw new DeepAIError(body.error || "Upload failed", { body });
       return body.attachment;
     },
@@ -247,6 +260,7 @@ export function createClient({
       if (webAccess !== undefined) fields.web_access_enabled = webAccess ? "true" : "false";
       const attachmentIds = collectAttachmentUuids(messages, attachments);
       if (attachmentIds.length) fields.attachment_uuids = JSON.stringify(attachmentIds);
+      log("[deepai] chat fields", { ...fields, chatHistory: "(" + fields.chatHistory.length + " chars, " + messages.length + " messages)" });
       const response = await raw("/hacking_is_a_serious_crime", {
         method: "POST",
         body: form(fields),
@@ -254,12 +268,14 @@ export function createClient({
         headers: { "api-key": generateApiKey(userAgent) },
       });
       if (!response.ok) {
+        const text = await response.text().catch(() => "");
         let body = null;
         try {
-          body = await response.json();
+          body = JSON.parse(text);
         } catch {}
+        log("[deepai] chat error body", response.status, text.slice(0, 2000));
         const code = body && body.status || "";
-        throw new DeepAIError(String(code || "HTTP " + response.status), { status: response.status, code: String(code), body });
+        throw new DeepAIError(String(code || "HTTP " + response.status + (text ? ": " + text.replace(/\s+/g, " ").slice(0, 200) : "")), { status: response.status, code: String(code), body });
       }
       const type = response.headers.get("content-type") || "";
       if (type.includes("application/json")) {

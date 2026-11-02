@@ -5,11 +5,11 @@ on:
       start_url:
         description: Page to start pulling from
         required: true
-        default: https://deepai.org/chat
+        default: https://deepai.org/machine-learning-model/text2img
       out_dir:
         description: Folder in the repo for the results
         required: true
-        default: Site
+        default: Text2img
       extra_hosts:
         description: Extra hosts to follow, comma separated (cdn or api hosts)
         required: false

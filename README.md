@@ -34,3 +34,7 @@ const text = await deepai.ask({
 `deepai.chat(options)` is the streaming form and yields `{ type: "text", value }` chunks. Errors are `DeepAIError` with `status` and `code` (for example `anonymous try it exceeded`).
 
 Endpoints used: `/get_user_login_type`, `/daily-time-sync/login|logout|user/`, `/get_usage_summary`, `/chat_attachments/upload|get`, `/get_chat_session`, `/get_my_chat_sessions_and_convert_anonymous_sessions`, `/check_chat_task_status` and `/hacking_is_a_serious_crime` (the chat request itself), all on `https://api.deepai.org`.
+
+## Attachments
+
+Handled like the site (`uploadChatAttachment` in the pulled chat page): `uploadAttachment` posts a multipart `file` field to `/chat_attachments/upload` with the session cookies and no `api-key` header, and returns `{ uuid, ... }`. Each chat request then carries `attachment_uuids` for every attachment in the conversation (taken from the `attachment_uuids` / `attachments` of the messages plus the `attachments` option), not just the new ones. Unit test: `node --test test/`.

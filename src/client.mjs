@@ -27,6 +27,21 @@ export function generateApiKey(userAgent) {
   return "tryit-" + random + "-" + outer;
 }
 
+// The site sends every attachment uuid of the whole conversation with each chat request, not only the new ones.
+export function collectAttachmentUuids(messages = [], attachments = []) {
+  const ids = [];
+  const add = (value) => {
+    const id = typeof value === "string" ? value : value && value.uuid;
+    if (id && !ids.includes(id)) ids.push(id);
+  };
+  for (const message of messages || []) {
+    for (const value of message.attachment_uuids || []) add(value);
+    for (const value of message.attachments || []) add(value);
+  }
+  for (const value of attachments || []) add(value);
+  return ids;
+}
+
 export class DeepAIError extends Error {
   constructor(message, { status = 0, code = "", body = null } = {}) {
     super(message);
@@ -175,6 +190,8 @@ export function createClient({
     },
 
     async uploadAttachment(file, name) {
+      if (!file) throw new DeepAIError("file is required", { code: "no_file" });
+      // Same as the site: plain multipart "file" field to /chat_attachments/upload, session cookies only, no api-key header.
       const data = new FormData();
       if (name) data.append("file", file, name);
       else data.append("file", file);
@@ -228,7 +245,8 @@ export function createClient({
       };
       if (memory !== undefined) fields.memory_enabled = memory ? "true" : "false";
       if (webAccess !== undefined) fields.web_access_enabled = webAccess ? "true" : "false";
-      if (attachments.length) fields.attachment_uuids = JSON.stringify(attachments.map((a) => (typeof a === "string" ? a : a.uuid)));
+      const attachmentIds = collectAttachmentUuids(messages, attachments);
+      if (attachmentIds.length) fields.attachment_uuids = JSON.stringify(attachmentIds);
       const response = await raw("/hacking_is_a_serious_crime", {
         method: "POST",
         body: form(fields),

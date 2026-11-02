@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보 처리 관련 선택 사항 - DeepAI</title>
+
+  <meta name="description" content="DeepAI의 개인정보 설정과 데이터 수집 설정을 관리하세요.">
+  <link rel="canonical" href="https://deepai.org/ko/privacy-choices/">
+
+  <script>
+    const app_base_url = 'https://api.deepai.org';
+    const contact_url = '/contact';
+  </script>
+  <script src="/ko/i18n.18adf327fc6f.js"></script>
+
+  <style>
+    /* Privacy Modal - Comprehensive Design */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.privacy-container {
+  width: 100%;
+  padding: 24px;
+  min-height: 100%;
+}
+
+/* Header */
+.privacy-header {
+  margin-bottom: 16px;
+}
+
+.privacy-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.privacy-header .subtitle {
+  font-size: 13px;
+  color: #666;
+  font-weight: normal;
+}
+
+/* Loading State */
+.loading-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3b82f6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Main Content */
+#main-content {
+  flex: 1;
+}
+
+.intro-text {
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Collapsible Sections */
+.section-collapse {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: #f9f9f9;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  font-size: 14px;
+  list-style: none;
+}
+
+.section-header::-webkit-details-marker {
+  display: none;
+}
+
+.section-title {
+  flex: 1;
+}
+
+.collapse-arrow {
+  font-size: 12px;
+  transition: transform 0.2s;
+}
+
+details[open] .collapse-arrow {
+  transform: rotate(180deg);
+}
+
+.section-content {
+  padding: 0 16px 16px 16px;
+  font-size: 13px;
+}
+
+.section-intro {
+  margin-bottom: 12px;
+  color: #666;
+}
+
+/* Essential Items */
+.essential-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.essential-item:last-child {
+  border-bottom: none;
+}
+
+.essential-item h4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.essential-item p {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Privacy Choices Section */
+.privacy-choices-section {
+  margin-bottom: 12px;
+}
+
+.privacy-choices-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.data-choice-notice {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+.data-choice-notice strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.data-choice-notice p {
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Toggle Items */
+.toggle-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e5e5;
+  gap: 16px;
+}
+
+.toggle-item:last-of-type {
+  border-bottom: none;
+}
+
+.toggle-info {
+  flex: 1;
+}
+
+.toggle-info h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.toggle-info p {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 28px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #3b82f6;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+input:disabled + .slider {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary,
+.btn-outline {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: white;
+  flex: 1;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
+
+.btn-primary:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #d1d5db;
+  flex: 1;
+}
+
+.btn-secondary:hover {
+  background: #f9fafb;
+}
+
+.btn-outline {
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #d1d5db;
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+.btn-outline:hover {
+  background: #f9fafb;
+}
+
+/* Data Rights */
+.data-right-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.data-right-item:last-child {
+  border-bottom: none;
+}
+
+.data-right-item h4 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+/* GPC Info */
+.gpc-info {
+  background: #fef3c7;
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin: 12px 0;
+  font-size: 12px;
+}
+
+.gpc-detail {
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  background: #f9f9f9;
+  border-left: 3px solid #e5e5e5;
+  margin-bottom: 8px;
+}
+
+.gpc-detail:last-child {
+  margin-bottom: 0;
+}
+
+.gpc-detail strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #1a1a1a;
+  font-size: 13px;
+}
+
+/* Legal Links */
+.legal-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.legal-links a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.legal-links a:hover {
+  text-decoration: underline;
+}
+
+.last-updated {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Footer Buttons */
+.footer-buttons {
+  display: flex;
+  gap: 8px;
+  padding: 16px 0 0 0;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 16px;
+}
+
+/* Error State */
+.error-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.error-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.error-state h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.error-state p {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: #1a1a1a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  max-width: 90%;
+  text-align: center;
+}
+
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .privacy-container {
+    padding: 16px;
+  }
+
+  .privacy-header h1 {
+    font-size: 20px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .footer-buttons {
+    flex-direction: column-reverse;
+  }
+}
+
+  </style>
+</head>
+<body>
+<div class="privacy-container">
+
+  <!-- Header -->
+  <div class="privacy-header">
+    <h1><img src="/static/images/privacy-choices-icon.svg" alt="" style="vertical-align: -2px; margin-right: 8px;" />개인정보 처리 관련 선택 사항</h1>
+    <p class="subtitle">DeepAI가 정보를 사용하는 방식과 이용 경험을 맞춤화하는 방식을 관리하세요.</p>
+  </div>
+
+  <!-- Loading State -->
+  <div id="loading-state" class="loading-state">
+    <div class="spinner"></div>
+    <p>사용자 설정을 불러오고 있어요...</p>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" style="display: none;">
+
+    <!-- Intro Text -->
+    <p class="intro-text">정보 사용 방식을 관리하세요. 필수 사용 항목은 항상 켜져 있고, 선택 사용 항목은 아래 토글을 클릭해 끌 수 있어요.</p>
+
+    <!-- Essential Data Use Section -->
+    <details class="section-collapse" open>
+      <summary class="section-header">
+        <span class="section-title">필수 데이터 사용(항상 켜짐)</span>
+        <span class="collapse-arrow">▲</span>
+      </summary>
+      <div class="section-content">
+        <div class="essential-item">
+          <h4>서비스 제공 및 계정 관리</h4>
+          <p>핵심 기능을 제공하고 계정을 관리하는 데 필요해요.</p>
+        </div>
+        <div class="essential-item">
+          <h4>보안 및 사기 방지</h4>
+          <p>악용과 보안 위협으로부터 사용자와 DeepAI를 보호하는 데 필요해요.</p>
+        </div>
+        <div class="essential-item">
+          <h4>법규 준수</h4>
+          <p>법적 의무를 이행하고 합법적인 요청에 응하는 데 필요해요.</p>
+        </div>
+      </div>
+    </details>
+
+    <!-- Your Privacy Choices Section -->
+    <div class="privacy-choices-section">
+      <h2>개인정보 처리 관련 선택 사항</h2>
+      <div class="data-choice-notice">
+        <strong>여러분의 데이터. 여러분의 선택.</strong>
+        <p>DeepAI는 웹사이트와 앱 전반의 타겟 광고를 위해 제3자와 개인정보를 공유해요. 이는 개인정보 보호법상 “판매 또는 공유”에 해당할 수 있어요. 아래에서 거부(옵트아웃)할 수 있어요.</p>
+      </div>
+
+      <!-- Toggle Items -->
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>분석 및 성과</h3>
+          <p>사용 현황을 측정해 안정성과 사용자 경험을 개선해요.</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-analytics">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>맞춤형 광고 및 타겟팅 광고</h3>
+          <p>활동 내역을 바탕으로 관련 광고를 표시해요. 끄면 정보의 판매/공유에서 제외돼요.</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-ads">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>맞춤 타겟 (페이스북, 틱톡 등)</h3>
+          <p>소셜 플랫폼에서 매칭 광고를 위해 연락처 정보를 사용하도록 허용해요.</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-audiences">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>제3자와의 공유</h3>
+          <p>데이터를 제3자 파트너와 공유하도록 허용해요.</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-third_party">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>AI 모델 훈련 및 제품 개선</h3>
+          <p>AI 모델과 제품을 개발하고 개선하는 데 데이터를 사용하도록 허용해요.</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-training">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <h3>마케팅 이메일 및 알림</h3>
+          <p>제품 업데이트, 유용한 팁 및 프로모션 소식을 받아보세요.</p>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggle-marketing">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button type="button" id="btn-reject" class="btn-secondary">필수 외 항목 거부</button>
+        <button type="button" id="btn-allow" class="btn-primary">모두 허용</button>
+      </div>
+    </div>
+
+    <!-- Your Data Rights Section -->
+    <!--
+    <details class="section-collapse">
+      <summary class="section-header">
+        <span class="section-title">Your data rights</span>
+        <span class="collapse-arrow">▼</span>
+      </summary>
+      <div class="section-content">
+        <p class="section-intro">Request access, correction, deletion, or export of your data.</p>
+
+        <div class="data-right-item">
+          <h4>Access your data</h4>
+          <button type="button" class="btn-outline" id="btn-access">Request access</button>
+        </div>
+
+        <div class="data-right-item">
+          <h4>Correct your data</h4>
+          <button type="button" class="btn-outline" id="btn-correct">Request correction</button>
+        </div>
+
+        <div class="data-right-item">
+          <h4>Delete your data</h4>
+          <button type="button" class="btn-outline" id="btn-delete">Request deletion</button>
+        </div>
+
+        <div class="data-right-item">
+          <h4>Download your data</h4>
+          <button type="button" class="btn-outline" id="btn-download">Request export</button>
+        </div>
+
+        <div class="data-right-item">
+          <h4>Contact privacy team</h4>
+          <button type="button" class="btn-outline" id="btn-contact">Contact us</button>
+        </div>
+      </div>
+    </details>
+    -->
+
+    <!-- GPC Section -->
+    <details class="section-collapse">
+      <summary class="section-header">
+        <span class="section-title">글로벌 개인정보 보호 제어(GPC)</span>
+        <span class="collapse-arrow">▼</span>
+      </summary>
+      <div class="section-content">
+        <p>웹사이트를 방문하기 전에 Global Privacy Control과 같은 브라우저 개인정보 보호 신호를 활성화해 거부(옵트아웃)할 수 있어요.</p>
+
+        <div class="gpc-info">
+          <strong>중요:</strong> DeepAI 계정에 로그인되어 있는지 여부에 따라:
+        </div>
+
+        <div class="gpc-detail">
+          <strong>로그인한 경우:</strong> 수신 거부 설정이 로그인된 모든 기기의 계정에 적용돼요.
+        </div>
+
+        <div class="gpc-detail">
+          <strong>로그인하지 않은 경우:</strong> 수신 거부 설정은 현재 사용 중인 브라우저와 기기의 쿠키 기반 광고에만 적용돼요.
+        </div>
+      </div>
+    </details>
+
+    <!-- Legal & Policy Information Section -->
+    <details class="section-collapse">
+      <summary class="section-header">
+        <span class="section-title">법률 및 정책 정보</span>
+        <span class="collapse-arrow">▼</span>
+      </summary>
+      <div class="section-content">
+        <div class="legal-links">
+          <a href="/privacy-policy" target="_blank">개인정보 처리방침</a>
+          <a href="/privacy-policy#state-privacy" target="_blank">캘리포니아주 개인정보 처리방침</a>
+        </div>
+        <p class="last-updated">최종 업데이트: 2025년 11월 23일</p>
+      </div>
+    </details>
+
+  </div>
+
+  <!-- Error State -->
+  <div id="error-state" class="error-state" style="display: none;">
+    <div class="error-icon">⚠️</div>
+    <h3>환경 설정을 불러올 수 없어요</h3>
+    <p id="error-message">나중에 다시 시도해 주세요.</p>
+    <button type="button" id="btn-retry" class="btn-primary">다시 시도</button>
+  </div>
+
+  <!-- Footer Buttons -->
+  <div class="footer-buttons" id="footer-buttons" style="display: none;">
+    <button type="button" id="btn-save" class="btn-primary">저장 후 종료</button>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <span id="toast-message"></span>
+  </div>
+
+</div>
+
+<script src="/static/CACHE/js/output.c0673ef23930.js"></script>
+
+</body>
+</html>

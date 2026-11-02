@@ -1,0 +1,32 @@
+{
+  "short_name": "DeepAI",
+  "name": "DeepAI",
+  "icons": [
+    {
+      "src": "https://deepai.org/static/images/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://deepai.org/static/images/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://deepai.org/static/images/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#150a2a",
+  "background_color": "#150a2a",
+  "display": "standalone",
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "org.deepai"
+    }
+  ],
+  "prefer_related_applications": true
+}

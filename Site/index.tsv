@@ -1,5 +1,6 @@
 depth	status	content_type	size_or_server	url	found_in
 2	skipped			data:image/png;base64,${imageData}	https://deepai.org/voice
+2	skipped			data:image/png;base64,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	https://deepai.org/chat/ai-code
 3	skipped			data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKAQAAAABTUiuoAAAB/ElEQVR4nO2bQY6jMBBFX42Remlu0EcxV+sj5QZwlBwgEiwjEf1Z2A5J94bMiMBoqhYWOG/xpS9XylWJiZUx/FpLgqOOOuqoo45uiVqJBrO2fGLdVLe7zQU4+gqaJEkjkM7FN/UESZKe0W0EOPoKOpUjpK82SH28GgBm1rxHgKMrovn2nk1i+r6/mQBH/8ItDd3dsrcIcPQP0Cipz08zpDHIOkDS/B4Bjq6IcraGfJwCls7N3Z/b0yHbXauj2a3H9lO8Wl2eu1K7a3WUXKOnEdQD0hj0sPRxLvV9v7tWR7Nb9W5Vncl7Udmt8rq7VkdzJjTixYAgY2oh9WBpBIMPvx0fBi2ZMNeEsTzlwhAgp0g/W8dC09mMdG4AbqZ+arJRbxPg6HpUXy2Yfc7VozjnPiEA1m0uwNFVUXsZccSYDA0WZMQgS6ebQZwbbSnA0derjDTeGoiXYl46GWIKM0N72VaAo69X8NJj6is9KPAq41jo3a0SpHpZLk/y2/HR0GV2DJPlm1cZm0w+3zocusyOs1FxZllKYjyK1v8YfegTkmpjcPkGy5dlz4QHQX/MjtP5Q7kRlU4twK0iu2t19MdEf/i8GunU5Are4D5P2V2royyVYBmRUNNh/gnUGGpLfnetjtaubo7wMH+s4y68gj8Mav6vBUcdddRRR/8h9Ddouz8oJfMZdQAAAABJRU5ErkJggg==	https://deepai.org/imessage-ai
 2	skipped			http://schema.org	https://deepai.org/#organization
 3	skipped			http://schema.org/	https://deepai.org/machine-learning-glossary-and-terms/active-learning
@@ -63,6 +64,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://api.deepai.org/chat/$%7BimageUrl%7D	https://api.deepai.org/chat/mathematics
 2	200	text/html	nginx + Phusion Passenger(R)	https://api.deepai.org/chat/ai-code	https://api.deepai.org
 3	limit			https://api.deepai.org/chat/ai-code#	https://api.deepai.org/chat/ai-code
+3	limit			https://api.deepai.org/chat/ai-code#deepai-window-desktop-mark	https://api.deepai.org/chat/ai-code
 3	limit			https://api.deepai.org/chat/chatgpt-4o-latest	https://api.deepai.org/chat
 3	limit			https://api.deepai.org/chat/chatgpt-alternative	https://api.deepai.org/chat
 3	limit			https://api.deepai.org/chat/claude-fable-5	https://api.deepai.org/chat
@@ -96,7 +98,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://api.deepai.org/copy	https://api.deepai.org/chat
 3	limit			https://api.deepai.org/dashboard/images	https://api.deepai.org/machine-learning-model/text2img
 3	limit			https://api.deepai.org/dashboard/profile	https://api.deepai.org/apis
-3	limit			https://api.deepai.org/dashboard/profile#auto-top-up	https://api.deepai.org/chat
+3	limit			https://api.deepai.org/dashboard/profile#auto-top-up	https://api.deepai.org/video
 3	limit			https://api.deepai.org/dashboard/videos	https://api.deepai.org/video
 2	200	text/html	nginx + Phusion Passenger(R)	https://api.deepai.org/definitions	https://api.deepai.org
 3	limit			https://api.deepai.org/definitions#	https://api.deepai.org/definitions
@@ -110,7 +112,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://api.deepai.org/docs#ai-chat-tools	https://api.deepai.org/docs
 3	limit			https://api.deepai.org/docs#ai-image-editor	https://api.deepai.org/docs
 3	limit			https://api.deepai.org/docs#ai-image-generator	https://api.deepai.org/docs
-3	limit			https://api.deepai.org/docs#ai-video-generator	https://api.deepai.org/docs
+3	limit			https://api.deepai.org/docs#ai-video-generator	https://api.deepai.org/video
 3	limit			https://api.deepai.org/docs#ai-voice-chat	https://api.deepai.org/docs
 3	limit			https://api.deepai.org/docs#apis	https://api.deepai.org/docs
 3	limit			https://api.deepai.org/docs#background-remover	https://api.deepai.org/docs
@@ -123,10 +125,10 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://api.deepai.org/docs#image-hd	https://api.deepai.org/docs
 3	limit			https://api.deepai.org/docs#image-replace	https://api.deepai.org/docs
 3	limit			https://api.deepai.org/docs#image-super-genius	https://api.deepai.org/docs
-3	limit			https://api.deepai.org/docs#pricing	https://api.deepai.org/docs
+3	limit			https://api.deepai.org/docs#pricing	https://api.deepai.org/machine-learning-model/text2img
 3	limit			https://api.deepai.org/docs#text2img	https://api.deepai.org/docs
 3	limit			https://api.deepai.org/docs#tool-ai-image-detector	https://api.deepai.org/docs
-3	limit			https://api.deepai.org/docs#tool-background-remover	https://api.deepai.org/docs
+3	limit			https://api.deepai.org/docs#tool-background-remover	https://api.deepai.org/machine-learning-model/background-remover
 3	limit			https://api.deepai.org/docs#tool-colorizer	https://api.deepai.org/docs
 3	limit			https://api.deepai.org/docs#tool-image-replace	https://api.deepai.org/docs
 3	limit			https://api.deepai.org/docs#tool-music	https://api.deepai.org/docs
@@ -138,12 +140,18 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://api.deepai.org/docs#waifu2x	https://api.deepai.org/docs
 3	limit			https://api.deepai.org/docs#website-builder	https://api.deepai.org/docs
 3	limit			https://api.deepai.org/docs#what-we-do	https://api.deepai.org/docs
+3	limit			https://api.deepai.org/download/deepai-code/linux-arm64	https://api.deepai.org/chat/ai-code
+3	limit			https://api.deepai.org/download/deepai-code/linux-arm64-deb	https://api.deepai.org/chat/ai-code
+3	limit			https://api.deepai.org/download/deepai-code/linux-x64	https://api.deepai.org/chat/ai-code
+3	limit			https://api.deepai.org/download/deepai-code/linux-x64-deb	https://api.deepai.org/chat/ai-code
 3	limit			https://api.deepai.org/download/deepai-code/mac-apple-silicon	https://api.deepai.org/chat/ai-code
 3	limit			https://api.deepai.org/download/deepai-code/mac-intel	https://api.deepai.org/chat/ai-code
+3	limit			https://api.deepai.org/download/deepai-code/windows-arm64	https://api.deepai.org/chat/ai-code
+3	limit			https://api.deepai.org/download/deepai-code/windows-x64	https://api.deepai.org/chat/ai-code
 2	200	text/html	nginx + Phusion Passenger(R)	https://api.deepai.org/feedback	https://api.deepai.org
 3	limit			https://api.deepai.org/feedback#	https://api.deepai.org/feedback
 2	404	text/html	nginx + Phusion Passenger(R)	https://api.deepai.org/gtm.js	https://api.deepai.org
-3	limit			https://api.deepai.org/hide	https://api.deepai.org/chat
+3	limit			https://api.deepai.org/hide	https://api.deepai.org/video
 3	limit			https://api.deepai.org/highlight.js	https://api.deepai.org/chat
 3	limit			https://api.deepai.org/humanized-text.txt	https://api.deepai.org/ai-humanizer
 2	200	text/html	nginx + Phusion Passenger(R)	https://api.deepai.org/imessage-ai	https://api.deepai.org
@@ -171,17 +179,17 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://api.deepai.org/machine-learning-glossary-and-terms/natural/u002Dlanguage/u002Dprocessing	https://api.deepai.org/definitions
 3	limit			https://api.deepai.org/machine-learning-glossary-and-terms/posterior-probability	https://api.deepai.org/definitions
 3	limit			https://api.deepai.org/machine-learning-glossary-and-terms/posterior/u002Dprobability	https://api.deepai.org/definitions
-3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(ad.favicon)%7D	https://api.deepai.org/machine-learning-model/colorizer
-3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://api.deepai.org/machine-learning-model/colorizer
-3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://api.deepai.org/machine-learning-model/colorizer
-3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(bid.image_url)%7D	https://api.deepai.org/machine-learning-model/colorizer
-3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(bid.logo_url)%7D	https://api.deepai.org/machine-learning-model/colorizer
-3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(clickUrl)%7D	https://api.deepai.org/machine-learning-model/colorizer
-3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(iconUrl)%7D	https://api.deepai.org/machine-learning-model/colorizer
-3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(item.image_url)%7D	https://api.deepai.org/machine-learning-model/colorizer
-3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(sanitizedCtaUrl)%7D	https://api.deepai.org/machine-learning-model/colorizer
-3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(sanitizedImageUrl)%7D	https://api.deepai.org/machine-learning-model/colorizer
-3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(sanitizedUrl)%7D	https://api.deepai.org/machine-learning-model/colorizer
+3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(ad.favicon)%7D	https://api.deepai.org/machine-learning-model/image-editor
+3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://api.deepai.org/machine-learning-model/image-editor
+3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://api.deepai.org/machine-learning-model/image-editor
+3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(bid.image_url)%7D	https://api.deepai.org/machine-learning-model/image-editor
+3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(bid.logo_url)%7D	https://api.deepai.org/machine-learning-model/image-editor
+3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(clickUrl)%7D	https://api.deepai.org/machine-learning-model/image-editor
+3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(iconUrl)%7D	https://api.deepai.org/machine-learning-model/image-editor
+3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(item.image_url)%7D	https://api.deepai.org/machine-learning-model/image-editor
+3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(sanitizedCtaUrl)%7D	https://api.deepai.org/machine-learning-model/image-editor
+3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(sanitizedImageUrl)%7D	https://api.deepai.org/machine-learning-model/image-editor
+3	limit			https://api.deepai.org/machine-learning-model/$%7BescapeAdHtml(sanitizedUrl)%7D	https://api.deepai.org/machine-learning-model/image-editor
 3	limit			https://api.deepai.org/machine-learning-model/anime-portrait-generator	https://api.deepai.org/machine-learning-model/text2img
 2	200	text/html	nginx + Phusion Passenger(R)	https://api.deepai.org/machine-learning-model/background-remover	https://api.deepai.org
 3	limit			https://api.deepai.org/machine-learning-model/background-remover#	https://api.deepai.org/machine-learning-model/background-remover
@@ -190,8 +198,8 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://api.deepai.org/machine-learning-model/cute-creature-generator	https://api.deepai.org/machine-learning-model/text2img
 3	limit			https://api.deepai.org/machine-learning-model/cyberpunk-generator	https://api.deepai.org/machine-learning-model/text2img
 3	limit			https://api.deepai.org/machine-learning-model/fantasy-world-generator	https://api.deepai.org/machine-learning-model/text2img
-3	limit			https://api.deepai.org/machine-learning-model/gtm.js	https://api.deepai.org/machine-learning-model/colorizer
-3	limit			https://api.deepai.org/machine-learning-model/hide	https://api.deepai.org/machine-learning-model/text2img
+3	limit			https://api.deepai.org/machine-learning-model/gtm.js	https://api.deepai.org/machine-learning-model/image-editor
+3	limit			https://api.deepai.org/machine-learning-model/hide	https://api.deepai.org/machine-learning-model/image-editor
 2	200	text/html	nginx + Phusion Passenger(R)	https://api.deepai.org/machine-learning-model/image-editor	https://api.deepai.org
 3	limit			https://api.deepai.org/machine-learning-model/image-editor#	https://api.deepai.org/machine-learning-model/image-editor
 3	limit			https://api.deepai.org/machine-learning-model/image-editor#modelSubmitButton	https://api.deepai.org/machine-learning-model/image-editor
@@ -289,8 +297,6 @@ depth	status	content_type	size_or_server	url	found_in
 2	206	image/jpeg	bytes 0-1023/46122 nginx	https://api.deepai.org/static/images/aiforgood-usfws.jpg	https://api.deepai.org
 2	206	image/webp	bytes 0-1023/51138 nginx	https://api.deepai.org/static/images/aiforgood-wildlife.webp	https://api.deepai.org
 3	limit			https://api.deepai.org/static/images/apis-glossary.svg	https://api.deepai.org/docs
-3	limit			https://api.deepai.org/static/images/deepai-code/app-dark.png	https://api.deepai.org/chat/ai-code
-3	limit			https://api.deepai.org/static/images/deepai-code/app-light.png	https://api.deepai.org/chat/ai-code
 2	206	image/gif	bytes 0-1023/254850 nginx	https://api.deepai.org/static/images/deepai.gif	https://api.deepai.org
 3	limit			https://api.deepai.org/static/images/docs/chat-special-modes.png	https://api.deepai.org/docs
 3	limit			https://api.deepai.org/static/images/docs/chat-tools-menu.png	https://api.deepai.org/docs
@@ -299,11 +305,11 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://api.deepai.org/static/images/docs/video-generator.mp4	https://api.deepai.org/docs
 3	limit			https://api.deepai.org/static/images/docs/website-builder.mp4	https://api.deepai.org/docs
 2	206	image/jpeg	bytes 0-1023/66891 nginx	https://api.deepai.org/static/images/dolphin-icon.jpeg	https://api.deepai.org
-3	limit			https://api.deepai.org/static/images/dolphin1.svg	https://api.deepai.org/machine-learning-model/colorizer
-3	limit			https://api.deepai.org/static/images/dolphin2.svg	https://api.deepai.org/machine-learning-model/colorizer
-3	limit			https://api.deepai.org/static/images/dolphin3.svg	https://api.deepai.org/machine-learning-model/colorizer
+3	limit			https://api.deepai.org/static/images/dolphin1.svg	https://api.deepai.org/machine-learning-model/image-editor
+3	limit			https://api.deepai.org/static/images/dolphin2.svg	https://api.deepai.org/machine-learning-model/image-editor
+3	limit			https://api.deepai.org/static/images/dolphin3.svg	https://api.deepai.org/machine-learning-model/image-editor
 3	limit			https://api.deepai.org/static/images/down-arrow.svg	https://api.deepai.org/machine-learning-model/text2img
-3	limit			https://api.deepai.org/static/images/download-icon.svg	https://api.deepai.org/machine-learning-model/colorizer
+3	limit			https://api.deepai.org/static/images/download-icon.svg	https://api.deepai.org/music
 2	206	image/svg+xml	bytes 0-1023/1763 nginx	https://api.deepai.org/static/images/error-icon.svg	https://api.deepai.org
 3	limit			https://api.deepai.org/static/images/external-link-icon.svg	https://api.deepai.org/machine-learning-model/text2img
 2	206	image/x-icon	bytes 0-1023/32988 nginx	https://api.deepai.org/static/images/favicon.ico	https://api.deepai.org
@@ -393,7 +399,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://api.deepai.org/static/js/katex.css	https://api.deepai.org/chat
 3	limit			https://api.deepai.org/static/js/katex.js	https://api.deepai.org/chat
 2	200	application/x-javascript	nginx	https://api.deepai.org/static/js/libs/dialog-polyfill.js	https://api.deepai.org
-3	limit			https://api.deepai.org/static/js/libs/masonry.pkgd.min.js	https://api.deepai.org/video
+3	limit			https://api.deepai.org/static/js/libs/masonry.pkgd.min.js	https://api.deepai.org/music
 3	limit			https://api.deepai.org/static/js/maquette.js	https://api.deepai.org/chat
 3	limit			https://api.deepai.org/static/js/marked-highlight.js	https://api.deepai.org/chat
 3	limit			https://api.deepai.org/static/js/marked.js	https://api.deepai.org/chat
@@ -507,6 +513,7 @@ depth	status	content_type	size_or_server	url	found_in
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/$%7BimageUrl%7D	https://deepai.org/chat/gpt-6-astra
 1	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/ai-code	https://deepai.org/chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/ai-code#	https://deepai.org/chat/ai-code
+2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/ai-code#deepai-window-desktop-mark	https://deepai.org/chat/ai-code
 1	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/chatgpt-4o-latest	https://deepai.org/chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/chatgpt-4o-latest#	https://deepai.org/chat/chatgpt-4o-latest
 1	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/chatgpt-alternative	https://deepai.org/chat
@@ -531,7 +538,7 @@ depth	status	content_type	size_or_server	url	found_in
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/gpt-chat#	https://deepai.org/chat/gpt-chat
 1	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/grok-4.3	https://deepai.org/chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/grok-4.3#	https://deepai.org/chat/grok-4.3
-2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/gtm.js	https://deepai.org/chat/gpt-6-astra
+2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/gtm.js	https://deepai.org/chat/ai-code
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/hide	https://deepai.org/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/highlight.js	https://deepai.org/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/chat/mathematics	https://deepai.org/#organization
@@ -574,7 +581,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/de/?login_required=true&next=/de/dashboard/profile#	https://deepai.org/de/dashboard/profile#auto-top-up
 4	limit			https://deepai.org/de/?login_required=true&next=/de/dashboard/videos#	https://deepai.org/de/dashboard/videos
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/#	https://deepai.org/de/
-3	limit			https://deepai.org/de/$%7BchatHome%7D/$%7BapiResultHtml[i].url_handle%7D	https://deepai.org/de/characters
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/$%7BchatHome%7D/$%7BapiResultHtml[i].url_handle%7D	https://deepai.org/de/characters
 3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/$%7Be=s%7D	https://deepai.org/de/voice
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/de/chat
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/de/chat
@@ -597,33 +604,45 @@ depth	status	content_type	size_or_server	url	found_in
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/apis	https://deepai.org/de/
 4	limit			https://deepai.org/de/apis#	https://deepai.org/de/apis
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/characters	https://deepai.org/de/chat
-3	limit			https://deepai.org/de/characters/All	https://deepai.org/de/characters
-3	limit			https://deepai.org/de/characters/Anime	https://deepai.org/de/characters
-3	limit			https://deepai.org/de/characters/Fantasy	https://deepai.org/de/characters
-3	limit			https://deepai.org/de/characters/Gaming	https://deepai.org/de/characters
-3	limit			https://deepai.org/de/characters/History	https://deepai.org/de/characters
-3	limit			https://deepai.org/de/characters/Literature	https://deepai.org/de/characters
-3	limit			https://deepai.org/de/characters/Music	https://deepai.org/de/characters
-3	limit			https://deepai.org/de/characters/My%20Characters	https://deepai.org/de/characters
-3	limit			https://deepai.org/de/characters/Politics	https://deepai.org/de/characters
-3	limit			https://deepai.org/de/characters/Television	https://deepai.org/de/characters
-3	limit			https://deepai.org/de/characters#	https://deepai.org/de/characters
+4	limit			https://deepai.org/de/characters/$%7BchatHome%7D/$%7BapiResultHtml[i].url_handle%7D	https://deepai.org/de/characters/Gaming
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/characters/All	https://deepai.org/de/characters
+4	limit			https://deepai.org/de/characters/All#	https://deepai.org/de/characters/All
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/characters/Anime	https://deepai.org/de/characters
+4	limit			https://deepai.org/de/characters/Anime#	https://deepai.org/de/characters/Anime
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/characters/Fantasy	https://deepai.org/de/characters
+4	limit			https://deepai.org/de/characters/Fantasy#	https://deepai.org/de/characters/Fantasy
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/characters/Gaming	https://deepai.org/de/characters
+4	limit			https://deepai.org/de/characters/Gaming#	https://deepai.org/de/characters/Gaming
+4	limit			https://deepai.org/de/characters/gtm.js	https://deepai.org/de/characters/Gaming
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/characters/History	https://deepai.org/de/characters
+4	limit			https://deepai.org/de/characters/History#	https://deepai.org/de/characters/History
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/characters/Literature	https://deepai.org/de/characters
+4	limit			https://deepai.org/de/characters/Literature#	https://deepai.org/de/characters/Literature
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/characters/Music	https://deepai.org/de/characters
+4	limit			https://deepai.org/de/characters/Music#	https://deepai.org/de/characters/Music
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/characters/My%20Characters	https://deepai.org/de/characters
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/characters/Politics	https://deepai.org/de/characters
+4	limit			https://deepai.org/de/characters/Politics#	https://deepai.org/de/characters/Politics
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/characters/Television	https://deepai.org/de/characters
+4	limit			https://deepai.org/de/characters/Television#	https://deepai.org/de/characters/Television
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/characters#	https://deepai.org/de/characters
 1	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat	https://deepai.org/chat
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/de/chat/claude-opus-5-5
-3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/de/chat/claude-opus-5-5
-3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/de/chat/claude-opus-5-5
-3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(bid.image_url)%7D	https://deepai.org/de/chat/claude-opus-5-5
-3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(bid.logo_url)%7D	https://deepai.org/de/chat/claude-opus-5-5
-3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(clickUrl)%7D	https://deepai.org/de/chat/claude-opus-5-5
-3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(iconUrl)%7D	https://deepai.org/de/chat/claude-opus-5-5
-3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(item.image_url)%7D	https://deepai.org/de/chat/claude-opus-5-5
-3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(sanitizedCtaUrl)%7D	https://deepai.org/de/chat/claude-opus-5-5
-3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(sanitizedImageUrl)%7D	https://deepai.org/de/chat/claude-opus-5-5
-3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(sanitizedUrl)%7D	https://deepai.org/de/chat/claude-opus-5-5
-3	limit			https://deepai.org/de/chat/$%7Bhref%7D	https://deepai.org/de/chat/claude-opus-5-5
-3	limit			https://deepai.org/de/chat/$%7BimageUrl%7D	https://deepai.org/de/chat/claude-opus-5-5
+3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/de/chat/gpt-6-astra
+3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/de/chat/gpt-6-astra
+3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/de/chat/gpt-6-astra
+3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(bid.image_url)%7D	https://deepai.org/de/chat/gpt-6-astra
+3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(bid.logo_url)%7D	https://deepai.org/de/chat/gpt-6-astra
+3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(clickUrl)%7D	https://deepai.org/de/chat/gpt-6-astra
+3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(iconUrl)%7D	https://deepai.org/de/chat/gpt-6-astra
+3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(item.image_url)%7D	https://deepai.org/de/chat/gpt-6-astra
+3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(sanitizedCtaUrl)%7D	https://deepai.org/de/chat/gpt-6-astra
+3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(sanitizedImageUrl)%7D	https://deepai.org/de/chat/gpt-6-astra
+3	limit			https://deepai.org/de/chat/$%7BescapeAdHtml(sanitizedUrl)%7D	https://deepai.org/de/chat/gpt-6-astra
+3	limit			https://deepai.org/de/chat/$%7Bhref%7D	https://deepai.org/de/chat/gpt-6-astra
+3	limit			https://deepai.org/de/chat/$%7BimageUrl%7D	https://deepai.org/de/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/ai-code	https://deepai.org/de/chat
-3	limit			https://deepai.org/de/chat/ai-code#	https://deepai.org/de/chat/ai-code
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/ai-code#	https://deepai.org/de/chat/ai-code
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/ai-code#deepai-window-desktop-mark	https://deepai.org/de/chat/ai-code
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/chatgpt-4o-latest	https://deepai.org/de/chat
 3	limit			https://deepai.org/de/chat/chatgpt-4o-latest#	https://deepai.org/de/chat/chatgpt-4o-latest
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/chatgpt-alternative	https://deepai.org/de/chat
@@ -631,13 +650,13 @@ depth	status	content_type	size_or_server	url	found_in
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/claude-fable-5	https://deepai.org/de/chat
 3	limit			https://deepai.org/de/chat/claude-fable-5#	https://deepai.org/de/chat/claude-fable-5
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/claude-opus-5-5	https://deepai.org/de/chat
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/claude-opus-5-5#	https://deepai.org/de/chat/claude-opus-5-5
+3	limit			https://deepai.org/de/chat/claude-opus-5-5#	https://deepai.org/de/chat/claude-opus-5-5
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/comedian	https://deepai.org/de/chat
 3	limit			https://deepai.org/de/chat/comedian#	https://deepai.org/de/chat/comedian
-3	limit			https://deepai.org/de/chat/copy	https://deepai.org/de/chat/claude-opus-5-5
+3	limit			https://deepai.org/de/chat/copy	https://deepai.org/de/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/debate	https://deepai.org/de/chat
 3	limit			https://deepai.org/de/chat/debate#	https://deepai.org/de/chat/debate
-3	limit			https://deepai.org/de/chat/delete	https://deepai.org/de/chat/claude-opus-5-5
+3	limit			https://deepai.org/de/chat/delete	https://deepai.org/de/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/drunk	https://deepai.org/de/chat
 3	limit			https://deepai.org/de/chat/drunk#	https://deepai.org/de/chat/drunk
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/gemini-4-argon	https://deepai.org/de/chat
@@ -648,9 +667,9 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/de/chat/gpt-chat#	https://deepai.org/de/chat/gpt-chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/grok-4.3	https://deepai.org/de/chat
 3	limit			https://deepai.org/de/chat/grok-4.3#	https://deepai.org/de/chat/grok-4.3
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/gtm.js	https://deepai.org/de/chat/claude-opus-5-5
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/hide	https://deepai.org/de/chat/claude-opus-5-5
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/highlight.js	https://deepai.org/de/chat/claude-opus-5-5
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/gtm.js	https://deepai.org/de/chat/ai-code
+3	limit			https://deepai.org/de/chat/hide	https://deepai.org/de/chat/gpt-6-astra
+3	limit			https://deepai.org/de/chat/highlight.js	https://deepai.org/de/chat/gpt-6-astra
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/mathematics	https://deepai.org/chat/mathematics
 4	limit			https://deepai.org/de/chat/mathematics#	https://deepai.org/de/chat/mathematics
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/movie	https://deepai.org/de/chat
@@ -663,7 +682,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/de/chat/poet#	https://deepai.org/de/chat/poet
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/proofreader	https://deepai.org/de/chat
 3	limit			https://deepai.org/de/chat/proofreader#	https://deepai.org/de/chat/proofreader
-3	limit			https://deepai.org/de/chat/regenerate	https://deepai.org/de/chat/claude-opus-5-5
+3	limit			https://deepai.org/de/chat/regenerate	https://deepai.org/de/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/relationships	https://deepai.org/de/chat
 3	limit			https://deepai.org/de/chat/relationships#	https://deepai.org/de/chat/relationships
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat/storyteller	https://deepai.org/de/chat
@@ -676,6 +695,9 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/de/chat/writer#	https://deepai.org/de/chat/writer
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/chat#	https://deepai.org/de/chat
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/copy	https://deepai.org/de/chat
+4	limit			https://deepai.org/de/dashboard/$%7BchatHome%7D/$%7BapiResultHtml[i].url_handle%7D	https://deepai.org/de/characters/My%20Characters
+4	limit			https://deepai.org/de/dashboard/characters?genre=My%20Characters#	https://deepai.org/de/characters/My%20Characters
+4	limit			https://deepai.org/de/dashboard/gtm.js	https://deepai.org/de/characters/My%20Characters
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/dashboard/images	https://deepai.org/de/machine-learning-model/text2img
 4	limit			https://deepai.org/de/dashboard/profile	https://deepai.org/de/apis
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/dashboard/profile#auto-top-up	https://deepai.org/de/chat
@@ -692,37 +714,37 @@ depth	status	content_type	size_or_server	url	found_in
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#ai-image-generator	https://deepai.org/de/docs
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#ai-video-generator	https://deepai.org/de/video
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#ai-voice-chat	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#apis	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#background-remover	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#colorizer	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#creative-upscale	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#deepai-code	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#getting-started	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#image-editor	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#apis	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#background-remover	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#colorizer	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#creative-upscale	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#deepai-code	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#getting-started	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#image-editor	https://deepai.org/de/docs
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#image-genius	https://deepai.org/de/docs
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#image-hd	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#image-replace	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#image-replace	https://deepai.org/de/docs
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#image-super-genius	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#pricing	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#text2img	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#tool-ai-image-detector	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#tool-background-remover	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#tool-colorizer	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#tool-image-replace	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#tool-music	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#tool-super-resolution	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#torch-srgan	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#video-api	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#pricing	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#text2img	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#tool-ai-image-detector	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#tool-background-remover	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#tool-colorizer	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#tool-image-replace	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#tool-music	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#tool-super-resolution	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#torch-srgan	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#video-api	https://deepai.org/de/docs
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#video-modes	https://deepai.org/de/docs
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#video-pro-members	https://deepai.org/de/docs
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#waifu2x	https://deepai.org/de/docs
+3	limit			https://deepai.org/de/docs#waifu2x	https://deepai.org/de/docs
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#website-builder	https://deepai.org/de/docs
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/docs#what-we-do	https://deepai.org/de/docs
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/gtm.js	https://deepai.org/de/chat
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/hide	https://deepai.org/de/chat
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/highlight.js	https://deepai.org/de/chat
 4	limit			https://deepai.org/de/humanized-text.txt	https://deepai.org/de/ai-humanizer
-2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/de/i18n.727ed2758ada.js	https://deepai.org/de/chat
+2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/de/i18n.8c8001730c99.js	https://deepai.org/de/chat
 3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/machine-learning-model/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/de/machine-learning-model/text2img
 3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/machine-learning-model/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/de/machine-learning-model/text2img
 3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/de/machine-learning-model/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/de/machine-learning-model/text2img
@@ -936,8 +958,14 @@ depth	status	content_type	size_or_server	url	found_in
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/docs#waifu2x	https://deepai.org/docs
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/docs#website-builder	https://deepai.org/docs
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/docs#what-we-do	https://deepai.org/docs
-2	200	application/octet-stream	Vercel	https://deepai.org/download/deepai-code/mac-apple-silicon	https://deepai.org/#organization
-2	200	application/octet-stream	Vercel	https://deepai.org/download/deepai-code/mac-intel	https://deepai.org/chat/ai-code
+2	200	application/vnd.appimage	173785469 cloudflare	https://deepai.org/download/deepai-code/linux-arm64	https://deepai.org/chat/ai-code
+2	200	application/vnd.debian.binary-package	140067012 cloudflare	https://deepai.org/download/deepai-code/linux-arm64-deb	https://deepai.org/chat/ai-code
+2	200	application/vnd.appimage	175048339 cloudflare	https://deepai.org/download/deepai-code/linux-x64	https://deepai.org/chat/ai-code
+2	200	application/vnd.debian.binary-package	147027088 cloudflare	https://deepai.org/download/deepai-code/linux-x64-deb	https://deepai.org/chat/ai-code
+2	200	application/x-apple-diskimage	168901436 cloudflare	https://deepai.org/download/deepai-code/mac-apple-silicon	https://deepai.org/#organization
+2	200	application/x-apple-diskimage	176576474 cloudflare	https://deepai.org/download/deepai-code/mac-intel	https://deepai.org/chat/ai-code
+2	200	application/vnd.microsoft.portable-executable	463072880 cloudflare	https://deepai.org/download/deepai-code/windows-arm64	https://deepai.org/chat/ai-code
+2	200	application/vnd.microsoft.portable-executable	483050896 cloudflare	https://deepai.org/download/deepai-code/windows-x64	https://deepai.org/chat/ai-code
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/drunk	https://deepai.org/chat/drunk
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/	https://deepai.org/#organization
 3	limit			https://deepai.org/es/?login_required=true&next=/es/dashboard/profile#	https://deepai.org/es/dashboard/profile#auto-top-up
@@ -977,21 +1005,22 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/es/characters/Television	https://deepai.org/es/characters
 3	limit			https://deepai.org/es/characters#	https://deepai.org/es/characters
 1	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat	https://deepai.org/chat
-3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(bid.image_url)%7D	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(bid.logo_url)%7D	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(clickUrl)%7D	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(iconUrl)%7D	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(item.image_url)%7D	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(sanitizedCtaUrl)%7D	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(sanitizedImageUrl)%7D	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(sanitizedUrl)%7D	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/$%7Bhref%7D	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/$%7BimageUrl%7D	https://deepai.org/es/chat/gemini-4-argon
+3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(bid.image_url)%7D	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(bid.logo_url)%7D	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(clickUrl)%7D	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(iconUrl)%7D	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(item.image_url)%7D	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(sanitizedCtaUrl)%7D	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(sanitizedImageUrl)%7D	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/$%7BescapeAdHtml(sanitizedUrl)%7D	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/$%7Bhref%7D	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/$%7BimageUrl%7D	https://deepai.org/es/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat/ai-code	https://deepai.org/es/chat
 3	limit			https://deepai.org/es/chat/ai-code#	https://deepai.org/es/chat/ai-code
+3	limit			https://deepai.org/es/chat/ai-code#deepai-window-desktop-mark	https://deepai.org/es/chat/ai-code
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat/chatgpt-4o-latest	https://deepai.org/es/chat
 3	limit			https://deepai.org/es/chat/chatgpt-4o-latest#	https://deepai.org/es/chat/chatgpt-4o-latest
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat/chatgpt-alternative	https://deepai.org/es/chat
@@ -1002,10 +1031,10 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/es/chat/claude-opus-5-5#	https://deepai.org/es/chat/claude-opus-5-5
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat/comedian	https://deepai.org/es/chat
 3	limit			https://deepai.org/es/chat/comedian#	https://deepai.org/es/chat/comedian
-3	limit			https://deepai.org/es/chat/copy	https://deepai.org/es/chat/gemini-4-argon
+3	limit			https://deepai.org/es/chat/copy	https://deepai.org/es/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat/debate	https://deepai.org/es/chat
 3	limit			https://deepai.org/es/chat/debate#	https://deepai.org/es/chat/debate
-3	limit			https://deepai.org/es/chat/delete	https://deepai.org/es/chat/gemini-4-argon
+3	limit			https://deepai.org/es/chat/delete	https://deepai.org/es/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat/drunk	https://deepai.org/es/chat
 3	limit			https://deepai.org/es/chat/drunk#	https://deepai.org/es/chat/drunk
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat/gemini-4-argon	https://deepai.org/es/chat
@@ -1016,9 +1045,9 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/es/chat/gpt-chat#	https://deepai.org/es/chat/gpt-chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat/grok-4.3	https://deepai.org/es/chat
 3	limit			https://deepai.org/es/chat/grok-4.3#	https://deepai.org/es/chat/grok-4.3
-3	limit			https://deepai.org/es/chat/gtm.js	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/hide	https://deepai.org/es/chat/gemini-4-argon
-3	limit			https://deepai.org/es/chat/highlight.js	https://deepai.org/es/chat/gemini-4-argon
+3	limit			https://deepai.org/es/chat/gtm.js	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/hide	https://deepai.org/es/chat/gpt-6-astra
+3	limit			https://deepai.org/es/chat/highlight.js	https://deepai.org/es/chat/gpt-6-astra
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat/mathematics	https://deepai.org/chat/mathematics
 4	limit			https://deepai.org/es/chat/mathematics#	https://deepai.org/es/chat/mathematics
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat/movie	https://deepai.org/es/chat
@@ -1031,7 +1060,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/es/chat/poet#	https://deepai.org/es/chat/poet
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat/proofreader	https://deepai.org/es/chat
 3	limit			https://deepai.org/es/chat/proofreader#	https://deepai.org/es/chat/proofreader
-3	limit			https://deepai.org/es/chat/regenerate	https://deepai.org/es/chat/gemini-4-argon
+3	limit			https://deepai.org/es/chat/regenerate	https://deepai.org/es/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat/relationships	https://deepai.org/es/chat
 3	limit			https://deepai.org/es/chat/relationships#	https://deepai.org/es/chat/relationships
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/chat/storyteller	https://deepai.org/es/chat
@@ -1090,7 +1119,7 @@ depth	status	content_type	size_or_server	url	found_in
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/hide	https://deepai.org/es/chat
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/es/highlight.js	https://deepai.org/es/chat
 4	limit			https://deepai.org/es/humanized-text.txt	https://deepai.org/es/ai-humanizer
-2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/es/i18n.23f5945926fc.js	https://deepai.org/es/chat
+2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/es/i18n.3232a1bb39dc.js	https://deepai.org/es/chat
 3	limit			https://deepai.org/es/machine-learning-model/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/es/machine-learning-model/text2img
 3	limit			https://deepai.org/es/machine-learning-model/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/es/machine-learning-model/text2img
 3	limit			https://deepai.org/es/machine-learning-model/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/es/machine-learning-model/text2img
@@ -1195,6 +1224,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/fr/chat/$%7BimageUrl%7D	https://deepai.org/fr/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/fr/chat/ai-code	https://deepai.org/fr/chat
 3	limit			https://deepai.org/fr/chat/ai-code#	https://deepai.org/fr/chat/ai-code
+3	limit			https://deepai.org/fr/chat/ai-code#deepai-window-desktop-mark	https://deepai.org/fr/chat/ai-code
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/fr/chat/chatgpt-4o-latest	https://deepai.org/fr/chat
 3	limit			https://deepai.org/fr/chat/chatgpt-4o-latest#	https://deepai.org/fr/chat/chatgpt-4o-latest
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/fr/chat/chatgpt-alternative	https://deepai.org/fr/chat
@@ -1219,7 +1249,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/fr/chat/gpt-chat#	https://deepai.org/fr/chat/gpt-chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/fr/chat/grok-4.3	https://deepai.org/fr/chat
 3	limit			https://deepai.org/fr/chat/grok-4.3#	https://deepai.org/fr/chat/grok-4.3
-3	limit			https://deepai.org/fr/chat/gtm.js	https://deepai.org/fr/chat/gpt-6-astra
+3	limit			https://deepai.org/fr/chat/gtm.js	https://deepai.org/fr/chat/ai-code
 3	limit			https://deepai.org/fr/chat/hide	https://deepai.org/fr/chat/gpt-6-astra
 3	limit			https://deepai.org/fr/chat/highlight.js	https://deepai.org/fr/chat/gpt-6-astra
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/fr/chat/mathematics	https://deepai.org/chat/mathematics
@@ -1293,7 +1323,7 @@ depth	status	content_type	size_or_server	url	found_in
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/fr/hide	https://deepai.org/fr/chat
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/fr/highlight.js	https://deepai.org/fr/chat
 4	limit			https://deepai.org/fr/humanized-text.txt	https://deepai.org/fr/ai-humanizer
-2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/fr/i18n.a4af339fe1fb.js	https://deepai.org/fr/chat
+2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/fr/i18n.344bb4cb90c4.js	https://deepai.org/fr/chat
 3	limit			https://deepai.org/fr/machine-learning-model/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/fr/machine-learning-model/text2img
 3	limit			https://deepai.org/fr/machine-learning-model/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/fr/machine-learning-model/text2img
 3	limit			https://deepai.org/fr/machine-learning-model/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/fr/machine-learning-model/text2img
@@ -1383,21 +1413,22 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/hi/characters/Television	https://deepai.org/hi/characters
 3	limit			https://deepai.org/hi/characters#	https://deepai.org/hi/characters
 1	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat	https://deepai.org/chat
-3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(bid.image_url)%7D	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(bid.logo_url)%7D	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(clickUrl)%7D	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(iconUrl)%7D	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(item.image_url)%7D	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(sanitizedCtaUrl)%7D	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(sanitizedImageUrl)%7D	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(sanitizedUrl)%7D	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/$%7Bhref%7D	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/$%7BimageUrl%7D	https://deepai.org/hi/chat/claude-opus-5-5
+3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/hi/chat/gpt-6-astra
+3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/hi/chat/gpt-6-astra
+3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/hi/chat/gpt-6-astra
+3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(bid.image_url)%7D	https://deepai.org/hi/chat/gpt-6-astra
+3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(bid.logo_url)%7D	https://deepai.org/hi/chat/gpt-6-astra
+3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(clickUrl)%7D	https://deepai.org/hi/chat/gpt-6-astra
+3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(iconUrl)%7D	https://deepai.org/hi/chat/gpt-6-astra
+3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(item.image_url)%7D	https://deepai.org/hi/chat/gpt-6-astra
+3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(sanitizedCtaUrl)%7D	https://deepai.org/hi/chat/gpt-6-astra
+3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(sanitizedImageUrl)%7D	https://deepai.org/hi/chat/gpt-6-astra
+3	limit			https://deepai.org/hi/chat/$%7BescapeAdHtml(sanitizedUrl)%7D	https://deepai.org/hi/chat/gpt-6-astra
+3	limit			https://deepai.org/hi/chat/$%7Bhref%7D	https://deepai.org/hi/chat/gpt-6-astra
+3	limit			https://deepai.org/hi/chat/$%7BimageUrl%7D	https://deepai.org/hi/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat/ai-code	https://deepai.org/hi/chat
 3	limit			https://deepai.org/hi/chat/ai-code#	https://deepai.org/hi/chat/ai-code
+3	limit			https://deepai.org/hi/chat/ai-code#deepai-window-desktop-mark	https://deepai.org/hi/chat/ai-code
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat/chatgpt-4o-latest	https://deepai.org/hi/chat
 3	limit			https://deepai.org/hi/chat/chatgpt-4o-latest#	https://deepai.org/hi/chat/chatgpt-4o-latest
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat/chatgpt-alternative	https://deepai.org/hi/chat
@@ -1408,10 +1439,10 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/hi/chat/claude-opus-5-5#	https://deepai.org/hi/chat/claude-opus-5-5
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat/comedian	https://deepai.org/hi/chat
 3	limit			https://deepai.org/hi/chat/comedian#	https://deepai.org/hi/chat/comedian
-3	limit			https://deepai.org/hi/chat/copy	https://deepai.org/hi/chat/claude-opus-5-5
+3	limit			https://deepai.org/hi/chat/copy	https://deepai.org/hi/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat/debate	https://deepai.org/hi/chat
 3	limit			https://deepai.org/hi/chat/debate#	https://deepai.org/hi/chat/debate
-3	limit			https://deepai.org/hi/chat/delete	https://deepai.org/hi/chat/claude-opus-5-5
+3	limit			https://deepai.org/hi/chat/delete	https://deepai.org/hi/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat/drunk	https://deepai.org/hi/chat
 3	limit			https://deepai.org/hi/chat/drunk#	https://deepai.org/hi/chat/drunk
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat/gemini-4-argon	https://deepai.org/hi/chat
@@ -1422,9 +1453,9 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/hi/chat/gpt-chat#	https://deepai.org/hi/chat/gpt-chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat/grok-4.3	https://deepai.org/hi/chat
 3	limit			https://deepai.org/hi/chat/grok-4.3#	https://deepai.org/hi/chat/grok-4.3
-3	limit			https://deepai.org/hi/chat/gtm.js	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/hide	https://deepai.org/hi/chat/claude-opus-5-5
-3	limit			https://deepai.org/hi/chat/highlight.js	https://deepai.org/hi/chat/claude-opus-5-5
+3	limit			https://deepai.org/hi/chat/gtm.js	https://deepai.org/hi/chat/ai-code
+3	limit			https://deepai.org/hi/chat/hide	https://deepai.org/hi/chat/gpt-6-astra
+3	limit			https://deepai.org/hi/chat/highlight.js	https://deepai.org/hi/chat/gpt-6-astra
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat/mathematics	https://deepai.org/chat/mathematics
 4	limit			https://deepai.org/hi/chat/mathematics#	https://deepai.org/hi/chat/mathematics
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat/movie	https://deepai.org/hi/chat
@@ -1437,7 +1468,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/hi/chat/poet#	https://deepai.org/hi/chat/poet
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat/proofreader	https://deepai.org/hi/chat
 3	limit			https://deepai.org/hi/chat/proofreader#	https://deepai.org/hi/chat/proofreader
-3	limit			https://deepai.org/hi/chat/regenerate	https://deepai.org/hi/chat/claude-opus-5-5
+3	limit			https://deepai.org/hi/chat/regenerate	https://deepai.org/hi/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat/relationships	https://deepai.org/hi/chat
 3	limit			https://deepai.org/hi/chat/relationships#	https://deepai.org/hi/chat/relationships
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/chat/storyteller	https://deepai.org/hi/chat
@@ -1496,7 +1527,7 @@ depth	status	content_type	size_or_server	url	found_in
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/hide	https://deepai.org/hi/chat
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/hi/highlight.js	https://deepai.org/hi/chat
 4	limit			https://deepai.org/hi/humanized-text.txt	https://deepai.org/hi/ai-humanizer
-2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/hi/i18n.94bd848dd9d1.js	https://deepai.org/hi/chat
+2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/hi/i18n.cb69501a9b13.js	https://deepai.org/hi/chat
 3	limit			https://deepai.org/hi/machine-learning-model/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/hi/machine-learning-model/text2img
 3	limit			https://deepai.org/hi/machine-learning-model/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/hi/machine-learning-model/text2img
 3	limit			https://deepai.org/hi/machine-learning-model/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/hi/machine-learning-model/text2img
@@ -1587,21 +1618,22 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/id/characters/Television	https://deepai.org/id/characters
 3	limit			https://deepai.org/id/characters#	https://deepai.org/id/characters
 1	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat	https://deepai.org/chat
-3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(bid.image_url)%7D	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(bid.logo_url)%7D	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(clickUrl)%7D	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(iconUrl)%7D	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(item.image_url)%7D	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(sanitizedCtaUrl)%7D	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(sanitizedImageUrl)%7D	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(sanitizedUrl)%7D	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/$%7Bhref%7D	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/$%7BimageUrl%7D	https://deepai.org/id/chat/gpt-6-astra
+3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/id/chat/gemini-4-argon
+3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/id/chat/gemini-4-argon
+3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/id/chat/gemini-4-argon
+3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(bid.image_url)%7D	https://deepai.org/id/chat/gemini-4-argon
+3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(bid.logo_url)%7D	https://deepai.org/id/chat/gemini-4-argon
+3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(clickUrl)%7D	https://deepai.org/id/chat/gemini-4-argon
+3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(iconUrl)%7D	https://deepai.org/id/chat/gemini-4-argon
+3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(item.image_url)%7D	https://deepai.org/id/chat/gemini-4-argon
+3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(sanitizedCtaUrl)%7D	https://deepai.org/id/chat/gemini-4-argon
+3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(sanitizedImageUrl)%7D	https://deepai.org/id/chat/gemini-4-argon
+3	limit			https://deepai.org/id/chat/$%7BescapeAdHtml(sanitizedUrl)%7D	https://deepai.org/id/chat/gemini-4-argon
+3	limit			https://deepai.org/id/chat/$%7Bhref%7D	https://deepai.org/id/chat/gemini-4-argon
+3	limit			https://deepai.org/id/chat/$%7BimageUrl%7D	https://deepai.org/id/chat/gemini-4-argon
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat/ai-code	https://deepai.org/id/chat
 3	limit			https://deepai.org/id/chat/ai-code#	https://deepai.org/id/chat/ai-code
+3	limit			https://deepai.org/id/chat/ai-code#deepai-window-desktop-mark	https://deepai.org/id/chat/ai-code
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat/chatgpt-4o-latest	https://deepai.org/id/chat
 3	limit			https://deepai.org/id/chat/chatgpt-4o-latest#	https://deepai.org/id/chat/chatgpt-4o-latest
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat/chatgpt-alternative	https://deepai.org/id/chat
@@ -1612,10 +1644,10 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/id/chat/claude-opus-5-5#	https://deepai.org/id/chat/claude-opus-5-5
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat/comedian	https://deepai.org/id/chat
 3	limit			https://deepai.org/id/chat/comedian#	https://deepai.org/id/chat/comedian
-3	limit			https://deepai.org/id/chat/copy	https://deepai.org/id/chat/gpt-6-astra
+3	limit			https://deepai.org/id/chat/copy	https://deepai.org/id/chat/gemini-4-argon
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat/debate	https://deepai.org/id/chat
 3	limit			https://deepai.org/id/chat/debate#	https://deepai.org/id/chat/debate
-3	limit			https://deepai.org/id/chat/delete	https://deepai.org/id/chat/gpt-6-astra
+3	limit			https://deepai.org/id/chat/delete	https://deepai.org/id/chat/gemini-4-argon
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat/drunk	https://deepai.org/id/chat
 3	limit			https://deepai.org/id/chat/drunk#	https://deepai.org/id/chat/drunk
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat/gemini-4-argon	https://deepai.org/id/chat
@@ -1626,9 +1658,9 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/id/chat/gpt-chat#	https://deepai.org/id/chat/gpt-chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat/grok-4.3	https://deepai.org/id/chat
 3	limit			https://deepai.org/id/chat/grok-4.3#	https://deepai.org/id/chat/grok-4.3
-3	limit			https://deepai.org/id/chat/gtm.js	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/hide	https://deepai.org/id/chat/gpt-6-astra
-3	limit			https://deepai.org/id/chat/highlight.js	https://deepai.org/id/chat/gpt-6-astra
+3	limit			https://deepai.org/id/chat/gtm.js	https://deepai.org/id/chat/ai-code
+3	limit			https://deepai.org/id/chat/hide	https://deepai.org/id/chat/gemini-4-argon
+3	limit			https://deepai.org/id/chat/highlight.js	https://deepai.org/id/chat/gemini-4-argon
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat/mathematics	https://deepai.org/chat/mathematics
 4	limit			https://deepai.org/id/chat/mathematics#	https://deepai.org/id/chat/mathematics
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat/movie	https://deepai.org/id/chat
@@ -1641,7 +1673,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/id/chat/poet#	https://deepai.org/id/chat/poet
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat/proofreader	https://deepai.org/id/chat
 3	limit			https://deepai.org/id/chat/proofreader#	https://deepai.org/id/chat/proofreader
-3	limit			https://deepai.org/id/chat/regenerate	https://deepai.org/id/chat/gpt-6-astra
+3	limit			https://deepai.org/id/chat/regenerate	https://deepai.org/id/chat/gemini-4-argon
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat/relationships	https://deepai.org/id/chat
 3	limit			https://deepai.org/id/chat/relationships#	https://deepai.org/id/chat/relationships
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/chat/storyteller	https://deepai.org/id/chat
@@ -1700,7 +1732,7 @@ depth	status	content_type	size_or_server	url	found_in
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/hide	https://deepai.org/id/chat
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/id/highlight.js	https://deepai.org/id/chat
 4	limit			https://deepai.org/id/humanized-text.txt	https://deepai.org/id/ai-humanizer
-2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/id/i18n.281cc6f94d6a.js	https://deepai.org/id/chat
+2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/id/i18n.0dd62fc37e66.js	https://deepai.org/id/chat
 3	limit			https://deepai.org/id/machine-learning-model/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/id/machine-learning-model/text2img
 3	limit			https://deepai.org/id/machine-learning-model/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/id/machine-learning-model/text2img
 3	limit			https://deepai.org/id/machine-learning-model/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/id/machine-learning-model/text2img
@@ -1804,6 +1836,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/it/chat/$%7BimageUrl%7D	https://deepai.org/it/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/it/chat/ai-code	https://deepai.org/it/chat
 3	limit			https://deepai.org/it/chat/ai-code#	https://deepai.org/it/chat/ai-code
+3	limit			https://deepai.org/it/chat/ai-code#deepai-window-desktop-mark	https://deepai.org/it/chat/ai-code
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/it/chat/chatgpt-4o-latest	https://deepai.org/it/chat
 3	limit			https://deepai.org/it/chat/chatgpt-4o-latest#	https://deepai.org/it/chat/chatgpt-4o-latest
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/it/chat/chatgpt-alternative	https://deepai.org/it/chat
@@ -1828,7 +1861,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/it/chat/gpt-chat#	https://deepai.org/it/chat/gpt-chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/it/chat/grok-4.3	https://deepai.org/it/chat
 3	limit			https://deepai.org/it/chat/grok-4.3#	https://deepai.org/it/chat/grok-4.3
-3	limit			https://deepai.org/it/chat/gtm.js	https://deepai.org/it/chat/gpt-6-astra
+3	limit			https://deepai.org/it/chat/gtm.js	https://deepai.org/it/chat/ai-code
 3	limit			https://deepai.org/it/chat/hide	https://deepai.org/it/chat/gpt-6-astra
 3	limit			https://deepai.org/it/chat/highlight.js	https://deepai.org/it/chat/gpt-6-astra
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/it/chat/mathematics	https://deepai.org/chat/mathematics
@@ -1902,7 +1935,7 @@ depth	status	content_type	size_or_server	url	found_in
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/it/hide	https://deepai.org/it/chat
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/it/highlight.js	https://deepai.org/it/chat
 4	limit			https://deepai.org/it/humanized-text.txt	https://deepai.org/it/ai-humanizer
-2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/it/i18n.c65fe003b867.js	https://deepai.org/it/chat
+2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/it/i18n.c4a93feab211.js	https://deepai.org/it/chat
 3	limit			https://deepai.org/it/machine-learning-model/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/it/machine-learning-model/text2img
 3	limit			https://deepai.org/it/machine-learning-model/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/it/machine-learning-model/text2img
 3	limit			https://deepai.org/it/machine-learning-model/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/it/machine-learning-model/text2img
@@ -2018,6 +2051,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/$%7BimageUrl%7D	https://deepai.org/ja/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/ai-code	https://deepai.org/ja/chat
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/ai-code#	https://deepai.org/ja/chat/ai-code
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/ai-code#deepai-window-desktop-mark	https://deepai.org/ja/chat/ai-code
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/chatgpt-4o-latest	https://deepai.org/ja/chat
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/chatgpt-4o-latest#	https://deepai.org/ja/chat/chatgpt-4o-latest
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/chatgpt-alternative	https://deepai.org/ja/chat
@@ -2042,7 +2076,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/gpt-chat#	https://deepai.org/ja/chat/gpt-chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/grok-4.3	https://deepai.org/ja/chat
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/grok-4.3#	https://deepai.org/ja/chat/grok-4.3
-3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/gtm.js	https://deepai.org/ja/chat/gpt-6-astra
+3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/gtm.js	https://deepai.org/ja/chat/ai-code
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/hide	https://deepai.org/ja/chat/gpt-6-astra
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/highlight.js	https://deepai.org/ja/chat/gpt-6-astra
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/chat/mathematics	https://deepai.org/chat/mathematics
@@ -2119,25 +2153,25 @@ depth	status	content_type	size_or_server	url	found_in
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/hide	https://deepai.org/ja/chat
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/highlight.js	https://deepai.org/ja/chat
 4	limit			https://deepai.org/ja/humanized-text.txt	https://deepai.org/ja/ai-humanizer
-2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/ja/i18n.8f0ed81dc31d.js	https://deepai.org/ja/chat
-3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/ja/machine-learning-model/image-editor
-3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/ja/machine-learning-model/image-editor
-3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/ja/machine-learning-model/image-editor
-3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(bid.image_url)%7D	https://deepai.org/ja/machine-learning-model/image-editor
-3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(bid.logo_url)%7D	https://deepai.org/ja/machine-learning-model/image-editor
-3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(clickUrl)%7D	https://deepai.org/ja/machine-learning-model/image-editor
-3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(iconUrl)%7D	https://deepai.org/ja/machine-learning-model/image-editor
-3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(item.image_url)%7D	https://deepai.org/ja/machine-learning-model/image-editor
-3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(sanitizedCtaUrl)%7D	https://deepai.org/ja/machine-learning-model/image-editor
-3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(sanitizedImageUrl)%7D	https://deepai.org/ja/machine-learning-model/image-editor
-3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(sanitizedUrl)%7D	https://deepai.org/ja/machine-learning-model/image-editor
+2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/ja/i18n.c54ffbdcac3f.js	https://deepai.org/ja/chat
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/ja/machine-learning-model/text2img
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/ja/machine-learning-model/text2img
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/ja/machine-learning-model/text2img
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(bid.image_url)%7D	https://deepai.org/ja/machine-learning-model/text2img
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(bid.logo_url)%7D	https://deepai.org/ja/machine-learning-model/text2img
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(clickUrl)%7D	https://deepai.org/ja/machine-learning-model/text2img
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(iconUrl)%7D	https://deepai.org/ja/machine-learning-model/text2img
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(item.image_url)%7D	https://deepai.org/ja/machine-learning-model/text2img
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(sanitizedCtaUrl)%7D	https://deepai.org/ja/machine-learning-model/text2img
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(sanitizedImageUrl)%7D	https://deepai.org/ja/machine-learning-model/text2img
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/$%7BescapeAdHtml(sanitizedUrl)%7D	https://deepai.org/ja/machine-learning-model/text2img
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/background-remover	https://deepai.org/ja/
 4	limit			https://deepai.org/ja/machine-learning-model/background-remover#	https://deepai.org/ja/machine-learning-model/background-remover
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/colorizer	https://deepai.org/ja/
 4	limit			https://deepai.org/ja/machine-learning-model/colorizer#	https://deepai.org/ja/machine-learning-model/colorizer
 3	limit			https://deepai.org/ja/machine-learning-model/creative-upscale	https://deepai.org/machine-learning-model/creative-upscale
-3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/gtm.js	https://deepai.org/ja/machine-learning-model/image-editor
-3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/hide	https://deepai.org/ja/machine-learning-model/image-editor
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/gtm.js	https://deepai.org/ja/machine-learning-model/text2img
+3	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/hide	https://deepai.org/ja/machine-learning-model/text2img
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/image-editor	https://deepai.org/ja/chat
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/image-editor#	https://deepai.org/ja/machine-learning-model/image-editor
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ja/machine-learning-model/image-editor#modelSubmitButton	https://deepai.org/ja/machine-learning-model/image-editor
@@ -2347,6 +2381,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/ko/chat/$%7BimageUrl%7D	https://deepai.org/ko/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ko/chat/ai-code	https://deepai.org/ko/chat
 3	limit			https://deepai.org/ko/chat/ai-code#	https://deepai.org/ko/chat/ai-code
+3	limit			https://deepai.org/ko/chat/ai-code#deepai-window-desktop-mark	https://deepai.org/ko/chat/ai-code
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ko/chat/chatgpt-4o-latest	https://deepai.org/ko/chat
 3	limit			https://deepai.org/ko/chat/chatgpt-4o-latest#	https://deepai.org/ko/chat/chatgpt-4o-latest
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ko/chat/chatgpt-alternative	https://deepai.org/ko/chat
@@ -2371,7 +2406,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/ko/chat/gpt-chat#	https://deepai.org/ko/chat/gpt-chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ko/chat/grok-4.3	https://deepai.org/ko/chat
 3	limit			https://deepai.org/ko/chat/grok-4.3#	https://deepai.org/ko/chat/grok-4.3
-3	limit			https://deepai.org/ko/chat/gtm.js	https://deepai.org/ko/chat/gpt-6-astra
+3	limit			https://deepai.org/ko/chat/gtm.js	https://deepai.org/ko/chat/ai-code
 3	limit			https://deepai.org/ko/chat/hide	https://deepai.org/ko/chat/gpt-6-astra
 3	limit			https://deepai.org/ko/chat/highlight.js	https://deepai.org/ko/chat/gpt-6-astra
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ko/chat/mathematics	https://deepai.org/chat/mathematics
@@ -2445,7 +2480,7 @@ depth	status	content_type	size_or_server	url	found_in
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ko/hide	https://deepai.org/ko/chat
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/ko/highlight.js	https://deepai.org/ko/chat
 4	limit			https://deepai.org/ko/humanized-text.txt	https://deepai.org/ko/ai-humanizer
-2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/ko/i18n.18adf327fc6f.js	https://deepai.org/ko/chat
+2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/ko/i18n.784e0846d842.js	https://deepai.org/ko/chat
 3	limit			https://deepai.org/ko/machine-learning-model/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/ko/machine-learning-model/text2img
 3	limit			https://deepai.org/ko/machine-learning-model/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/ko/machine-learning-model/text2img
 3	limit			https://deepai.org/ko/machine-learning-model/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/ko/machine-learning-model/text2img
@@ -2495,7 +2530,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/ko/website-builder#	https://deepai.org/ko/website-builder
 3	limit			https://deepai.org/ko/website-builder#wb-hero	https://deepai.org/ko/website-builder
 3	limit			https://deepai.org/ko/website-builder#wb-possibilities-title	https://deepai.org/ko/website-builder
-3	limit			https://deepai.org/machine-learning-glossary-and-terms/activation-function	https://deepai.org/machine-learning-glossary-and-terms/batch-normalization
+3	limit			https://deepai.org/machine-learning-glossary-and-terms/activation-function	https://deepai.org/machine-learning-glossary-and-terms/convolutional-neural-network
 3	limit			https://deepai.org/machine-learning-glossary-and-terms/activation-level	https://deepai.org/machine-learning-glossary-and-terms/active-learning
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/machine-learning-glossary-and-terms/active-learning	https://deepai.org/definitions
 3	limit			https://deepai.org/machine-learning-glossary-and-terms/active-learning#	https://deepai.org/machine-learning-glossary-and-terms/active-learning
@@ -2582,7 +2617,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/machine-learning-glossary-and-terms/precision-and-recall	https://deepai.org/machine-learning-glossary-and-terms/evaluation-metrics
 3	limit			https://deepai.org/machine-learning-glossary-and-terms/prior-probability	https://deepai.org/machine-learning-glossary-and-terms/bayes-theorem
 3	limit			https://deepai.org/machine-learning-glossary-and-terms/probability	https://deepai.org/machine-learning-glossary-and-terms/generative-adversarial-network
-3	limit			https://deepai.org/machine-learning-glossary-and-terms/probability-distribution	https://deepai.org/machine-learning-glossary-and-terms/attention-models
+3	limit			https://deepai.org/machine-learning-glossary-and-terms/probability-distribution	https://deepai.org/machine-learning-glossary-and-terms/convolutional-neural-network
 3	limit			https://deepai.org/machine-learning-glossary-and-terms/probability-interpretations	https://deepai.org/machine-learning-glossary-and-terms/bayes-theorem
 3	limit			https://deepai.org/machine-learning-glossary-and-terms/rectified-linear-units	https://deepai.org/machine-learning-glossary-and-terms/convolutional-neural-network
 3	limit			https://deepai.org/machine-learning-glossary-and-terms/recurrent-neural-network	https://deepai.org/machine-learning-glossary-and-terms/batch-normalization
@@ -2851,6 +2886,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/pt-br/chat/$%7BimageUrl%7D	https://deepai.org/pt-br/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/pt-br/chat/ai-code	https://deepai.org/pt-br/chat
 3	limit			https://deepai.org/pt-br/chat/ai-code#	https://deepai.org/pt-br/chat/ai-code
+3	limit			https://deepai.org/pt-br/chat/ai-code#deepai-window-desktop-mark	https://deepai.org/pt-br/chat/ai-code
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/pt-br/chat/chatgpt-4o-latest	https://deepai.org/pt-br/chat
 3	limit			https://deepai.org/pt-br/chat/chatgpt-4o-latest#	https://deepai.org/pt-br/chat/chatgpt-4o-latest
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/pt-br/chat/chatgpt-alternative	https://deepai.org/pt-br/chat
@@ -2875,7 +2911,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/pt-br/chat/gpt-chat#	https://deepai.org/pt-br/chat/gpt-chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/pt-br/chat/grok-4.3	https://deepai.org/pt-br/chat
 3	limit			https://deepai.org/pt-br/chat/grok-4.3#	https://deepai.org/pt-br/chat/grok-4.3
-3	limit			https://deepai.org/pt-br/chat/gtm.js	https://deepai.org/pt-br/chat/gpt-6-astra
+3	limit			https://deepai.org/pt-br/chat/gtm.js	https://deepai.org/pt-br/chat/ai-code
 3	limit			https://deepai.org/pt-br/chat/hide	https://deepai.org/pt-br/chat/gpt-6-astra
 3	limit			https://deepai.org/pt-br/chat/highlight.js	https://deepai.org/pt-br/chat/gpt-6-astra
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/pt-br/chat/mathematics	https://deepai.org/chat/mathematics
@@ -2949,7 +2985,7 @@ depth	status	content_type	size_or_server	url	found_in
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/pt-br/hide	https://deepai.org/pt-br/chat
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/pt-br/highlight.js	https://deepai.org/pt-br/chat
 4	limit			https://deepai.org/pt-br/humanized-text.txt	https://deepai.org/pt-br/ai-humanizer
-2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/pt-br/i18n.357491a7de59.js	https://deepai.org/pt-br/chat
+2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/pt-br/i18n.2366ef02052d.js	https://deepai.org/pt-br/chat
 3	limit			https://deepai.org/pt-br/machine-learning-model/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/pt-br/machine-learning-model/text2img
 3	limit			https://deepai.org/pt-br/machine-learning-model/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/pt-br/machine-learning-model/text2img
 3	limit			https://deepai.org/pt-br/machine-learning-model/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/pt-br/machine-learning-model/text2img
@@ -3079,7 +3115,6 @@ depth	status	content_type	size_or_server	url	found_in
 2	206	image/png	bytes 0-1023/9528 nginx	https://deepai.org/static/images/app-icon-192.png	https://deepai.org/static/manifest.json
 2	206	image/png	bytes 0-1023/23928 nginx	https://deepai.org/static/images/app-icon-512.png	https://deepai.org/static/manifest.json
 2	206	image/png	bytes 0-1023/273674 nginx	https://deepai.org/static/images/deepai-code/app-dark.png	https://deepai.org/chat/ai-code
-2	206	image/png	bytes 0-1023/265029 nginx	https://deepai.org/static/images/deepai-code/app-light.png	https://deepai.org/chat/ai-code
 2	206	image/gif	bytes 0-1023/254850 nginx	https://deepai.org/static/images/deepai.gif	https://deepai.org/#organization
 2	206	image/png	bytes 0-1023/144018 nginx	https://deepai.org/static/images/docs/chat-special-modes.png	https://deepai.org/docs
 2	206	image/png	bytes 0-1023/205363 nginx	https://deepai.org/static/images/docs/chat-tools-menu.png	https://deepai.org/docs
@@ -3328,8 +3363,8 @@ depth	status	content_type	size_or_server	url	found_in
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/video#videoControls	https://deepai.org/video
 1	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/voice	https://deepai.org/chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/voice#	https://deepai.org/voice
-4	limit			https://deepai.org/website_builder/try/site?wbFrame=d439ebe7eef24b57806ca58d73e6ad0a	https://deepai.org/ja/website-builder/try
-3	limit			https://deepai.org/website_builder/try/site?wbFrame=e515f5f338a04d2b8e3de3b5198fb2f8	https://deepai.org/website-builder/try
+4	limit			https://deepai.org/website_builder/try/site?wbFrame=9f7890e55e944092976178107a8c4a7f	https://deepai.org/ja/website-builder/try
+3	limit			https://deepai.org/website_builder/try/site?wbFrame=d845da46666a4e2da7bf3f6c23adb9a9	https://deepai.org/website-builder/try
 1	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/website-builder	https://deepai.org/chat
 3	limit			https://deepai.org/website-builder/gtm.js	https://deepai.org/website-builder/try
 2	421	application/json	56 nginx + Phusion Passenger(R)	https://deepai.org/website-builder/new	https://deepai.org/website-builder
@@ -3392,6 +3427,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/zh-hans/chat/$%7BimageUrl%7D	https://deepai.org/zh-hans/chat/gpt-6-astra
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/zh-hans/chat/ai-code	https://deepai.org/zh-hans/chat
 3	limit			https://deepai.org/zh-hans/chat/ai-code#	https://deepai.org/zh-hans/chat/ai-code
+3	limit			https://deepai.org/zh-hans/chat/ai-code#deepai-window-desktop-mark	https://deepai.org/zh-hans/chat/ai-code
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/zh-hans/chat/chatgpt-4o-latest	https://deepai.org/zh-hans/chat
 3	limit			https://deepai.org/zh-hans/chat/chatgpt-4o-latest#	https://deepai.org/zh-hans/chat/chatgpt-4o-latest
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/zh-hans/chat/chatgpt-alternative	https://deepai.org/zh-hans/chat
@@ -3416,7 +3452,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/zh-hans/chat/gpt-chat#	https://deepai.org/zh-hans/chat/gpt-chat
 2	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/zh-hans/chat/grok-4.3	https://deepai.org/zh-hans/chat
 3	limit			https://deepai.org/zh-hans/chat/grok-4.3#	https://deepai.org/zh-hans/chat/grok-4.3
-3	limit			https://deepai.org/zh-hans/chat/gtm.js	https://deepai.org/zh-hans/chat/gpt-6-astra
+3	limit			https://deepai.org/zh-hans/chat/gtm.js	https://deepai.org/zh-hans/chat/ai-code
 3	limit			https://deepai.org/zh-hans/chat/hide	https://deepai.org/zh-hans/chat/gpt-6-astra
 3	limit			https://deepai.org/zh-hans/chat/highlight.js	https://deepai.org/zh-hans/chat/gpt-6-astra
 3	200	text/html	nginx + Phusion Passenger(R)	https://deepai.org/zh-hans/chat/mathematics	https://deepai.org/chat/mathematics
@@ -3490,7 +3526,7 @@ depth	status	content_type	size_or_server	url	found_in
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/zh-hans/hide	https://deepai.org/zh-hans/chat
 2	404	text/html	nginx + Phusion Passenger(R)	https://deepai.org/zh-hans/highlight.js	https://deepai.org/zh-hans/chat
 4	limit			https://deepai.org/zh-hans/humanized-text.txt	https://deepai.org/zh-hans/ai-humanizer
-2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/zh-hans/i18n.23afb3ca8499.js	https://deepai.org/zh-hans/chat
+2	200	text/javascript	nginx + Phusion Passenger(R)	https://deepai.org/zh-hans/i18n.d1cbe18c1e1f.js	https://deepai.org/zh-hans/chat
 3	limit			https://deepai.org/zh-hans/machine-learning-model/$%7BescapeAdHtml(ad.favicon)%7D	https://deepai.org/zh-hans/machine-learning-model/text2img
 3	limit			https://deepai.org/zh-hans/machine-learning-model/$%7BescapeAdHtml(adData.advertiserIconUrl)%7D	https://deepai.org/zh-hans/machine-learning-model/text2img
 3	limit			https://deepai.org/zh-hans/machine-learning-model/$%7BescapeAdHtml(adData.squareImageUrl)%7D	https://deepai.org/zh-hans/machine-learning-model/text2img
@@ -3541,10 +3577,13 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://deepai.org/zh-hans/website-builder#wb-hero	https://deepai.org/zh-hans/website-builder
 3	limit			https://deepai.org/zh-hans/website-builder#wb-possibilities-title	https://deepai.org/zh-hans/website-builder
 1	skipped			https://deepai.pay.zeroclick.io/llms.txt	https://deepai.org/chat
+3	skipped			https://deepai.pay.zeroclick.io/llms.txt（x402/MPP、APIキー不要）にて、動画を1回ごとの課金制でご購入いただけます。HDは1秒あたり0.20ドル、Hollywoodは1秒あたり0.30ドルです。	https://deepai.org/ja/video
+3	skipped			https://deepai.pay.zeroclick.io/llms.txt에서	https://deepai.org/ko/video
 3	skipped			https://deepai.vi.softonic.com/web-apps	https://deepai.org/press
 3	skipped			https://deepgram.com/ai-glossary/f1-score-machine-learning	https://deepai.org/machine-learning-glossary-and-terms/f-score
 3	skipped			https://developers.google.com/machine-learning/gan	https://deepai.org/machine-learning-glossary-and-terms/generative-adversarial-network
 3	skipped			https://developers.google.com/machine-learning/gan[4]	https://deepai.org/machine-learning-glossary-and-terms/generative-adversarial-network
+2	skipped			https://discord.gg/jYEgp5T5gY	https://deepai.org/chat/ai-code
 2	skipped			https://dlnr.hawaii.gov/	https://deepai.org/#organization
 3	skipped			https://drive.google.com/drive/folders/1AAW2FaETnkWtCAB0_J6dOG5YN9fmOXc3	https://deepai.org/press
 3	skipped			https://drive.google.com/drive/folders/1H1On_K2kXpXd67vgFRQtLGxB6rYEPwBW	https://deepai.org/press
@@ -3574,39 +3613,39 @@ depth	status	content_type	size_or_server	url	found_in
 3	skipped			https://humanize.undetectable.ai/document	https://deepai.org/ai-humanizer
 3	skipped			https://humanize.undetectable.ai/submit	https://deepai.org/ai-humanizer
 2	skipped			https://ico.org.uk/global/contact-us/	https://deepai.org/privacy-policy
-1	403	application/xml	BunnyCDN-IL1-1067	https://images.deepai.org	https://deepai.org/chat
-2	403	application/xml	BunnyCDN-IL1-1067	https://images.deepai.org/${apiResultHtml[i].image}	https://deepai.org/characters
-2	403	application/xml	BunnyCDN-IL1-1067	https://images.deepai.org/$%7BapiResultHtml[i].image%7D	https://deepai.org/characters
+1	403	application/xml	BunnyCDN-IL1-871	https://images.deepai.org	https://deepai.org/chat
+2	403	application/xml	BunnyCDN-IL1-871	https://images.deepai.org/${apiResultHtml[i].image}	https://deepai.org/characters
+2	403	application/xml	BunnyCDN-IL1-871	https://images.deepai.org/$%7BapiResultHtml[i].image%7D	https://deepai.org/characters
 3	limit			https://images.deepai.org/django-summernote/2018-02-01/e3a87dc6-08d6-4395-b627-cb7a43e58c68.png	https://deepai.org/machine-learning-glossary-and-terms/bayes-theorem
 3	limit			https://images.deepai.org/glossary-terms/010684dd4a954189a3b15943d7406024/conditional-adversarial-network-thumb.jpg	https://deepai.org/machine-learning-glossary-and-terms/generative-adversarial-network
 3	limit			https://images.deepai.org/glossary-terms/09d423c4bc354d4c9b31d50d59c8bdb4/f-score-thumb.jpg	https://deepai.org/machine-learning-glossary-and-terms/f-score
-2	206	image/png	bytes 0-1023/18254 BunnyCDN-IL1-1067	https://images.deepai.org/glossary-terms/21c9fc6b87fc4511bdb13aeba83ce6c1/bayestheorum.png	https://deepai.org/definitions
-2	206	image/jpeg	bytes 0-1023/54009 BunnyCDN-IL1-1067	https://images.deepai.org/glossary-terms/46a6b355896c490cae75d2a0a15d4f65/active-learning.jpg	https://deepai.org/definitions
+2	206	image/png	bytes 0-1023/18254 BunnyCDN-IL1-871	https://images.deepai.org/glossary-terms/21c9fc6b87fc4511bdb13aeba83ce6c1/bayestheorum.png	https://deepai.org/definitions
+2	206	image/jpeg	bytes 0-1023/54009 BunnyCDN-IL1-871	https://images.deepai.org/glossary-terms/46a6b355896c490cae75d2a0a15d4f65/active-learning.jpg	https://deepai.org/definitions
 3	limit			https://images.deepai.org/glossary-terms/4e8ed9b04c8d429cb683e28508319e34/deep-belief-network-thumb.jpg	https://deepai.org/machine-learning-glossary-and-terms/deep-belief-network
-2	206	image/png	bytes 0-1023/66501 BunnyCDN-IL1-1067	https://images.deepai.org/glossary-terms/6124ba1752f943a3aabb3338a7a19e13/nlp.png	https://deepai.org/definitions
-2	206	image/png	bytes 0-1023/79425 BunnyCDN-IL1-1067	https://images.deepai.org/glossary-terms/6f393c9a94fc4f8789a2efdd709bf604/CNNs.png	https://deepai.org/definitions
-2	206	image/jpeg	bytes 0-1023/81045 BunnyCDN-IL1-1067	https://images.deepai.org/glossary-terms/8c4669a3effe43efb28496cef5dcc07f/deep_belief_network.jpg	https://deepai.org/definitions
-2	206	image/png	bytes 0-1023/96821 BunnyCDN-IL1-1067	https://images.deepai.org/glossary-terms/981e1ffea3814ae193c27461253faf63/batch_normalization.png	https://deepai.org/definitions
+2	206	image/png	bytes 0-1023/66501 BunnyCDN-IL1-871	https://images.deepai.org/glossary-terms/6124ba1752f943a3aabb3338a7a19e13/nlp.png	https://deepai.org/definitions
+2	206	image/png	bytes 0-1023/79425 BunnyCDN-IL1-871	https://images.deepai.org/glossary-terms/6f393c9a94fc4f8789a2efdd709bf604/CNNs.png	https://deepai.org/definitions
+2	206	image/jpeg	bytes 0-1023/81045 BunnyCDN-IL1-871	https://images.deepai.org/glossary-terms/8c4669a3effe43efb28496cef5dcc07f/deep_belief_network.jpg	https://deepai.org/definitions
+2	206	image/png	bytes 0-1023/96821 BunnyCDN-IL1-871	https://images.deepai.org/glossary-terms/981e1ffea3814ae193c27461253faf63/batch_normalization.png	https://deepai.org/definitions
 3	limit			https://images.deepai.org/glossary-terms/9a55fcf5610149a8b935db74ad4b6a61/active-learning-thumb.jpg	https://deepai.org/machine-learning-glossary-and-terms/active-learning
-2	206	image/png	bytes 0-1023/12365 BunnyCDN-IL1-1067	https://images.deepai.org/glossary-terms/a1559e0ba07a4c0d91bd0af15e16fc20/Evaluation-metrics.png	https://deepai.org/definitions
+2	206	image/png	bytes 0-1023/12365 BunnyCDN-IL1-871	https://images.deepai.org/glossary-terms/a1559e0ba07a4c0d91bd0af15e16fc20/Evaluation-metrics.png	https://deepai.org/definitions
 3	limit			https://images.deepai.org/glossary-terms/a44ae329db514e1196d1005440823b50/attention-models-thumb.jpg	https://deepai.org/machine-learning-glossary-and-terms/attention-models
-2	206	image/jpeg	bytes 0-1023/9898 BunnyCDN-IL1-1067	https://images.deepai.org/glossary-terms/b9c8dec8549a4201ae358483cc6bdfa6/fscore.jpg	https://deepai.org/definitions
+2	206	image/jpeg	bytes 0-1023/9898 BunnyCDN-IL1-871	https://images.deepai.org/glossary-terms/b9c8dec8549a4201ae358483cc6bdfa6/fscore.jpg	https://deepai.org/definitions
 3	limit			https://images.deepai.org/glossary-terms/ba10bfa8fa0b415fa756a0b2c7658e1d/convolutional-neural-network-thumb.jpg	https://deepai.org/machine-learning-glossary-and-terms/convolutional-neural-network
 3	limit			https://images.deepai.org/glossary-terms/bayes-theorem-7743582.svg	https://deepai.org/machine-learning-glossary-and-terms/bayes-theorem
 3	limit			https://images.deepai.org/glossary-terms/bayes-theorem-9439305.svg	https://deepai.org/machine-learning-glossary-and-terms/bayes-theorem
 3	limit			https://images.deepai.org/glossary-terms/d389572e0bd94239bc15bb0270732d34/natural-language-processing-thumb.jpg	https://deepai.org/machine-learning-glossary-and-terms/natural-language-processing
-2	206	image/jpeg	bytes 0-1023/92119 BunnyCDN-IL1-1067	https://images.deepai.org/glossary-terms/dbb2e9c4cbaf4215a84d8dabd7f8b2a4/conditional-adversarial-network.jpg	https://deepai.org/definitions
+2	206	image/jpeg	bytes 0-1023/92119 BunnyCDN-IL1-871	https://images.deepai.org/glossary-terms/dbb2e9c4cbaf4215a84d8dabd7f8b2a4/conditional-adversarial-network.jpg	https://deepai.org/definitions
 3	limit			https://images.deepai.org/glossary-terms/dbf69bf7dd634363a5830280d6fb899a/bayes-theorem-thumb.jpg	https://deepai.org/machine-learning-glossary-and-terms/bayes-theorem
 3	limit			https://images.deepai.org/glossary-terms/e15157b4d7bc4d1fa9d4fce1bf6d94bb/batch-normalization-thumb.jpg	https://deepai.org/machine-learning-glossary-and-terms/batch-normalization
-2	206	image/png	bytes 0-1023/38303 BunnyCDN-IL1-1067	https://images.deepai.org/glossary-terms/ef9b91dc66a645938bdd8742cf3ec7e3/attentionmodel.png	https://deepai.org/definitions
-2	206	image/png	bytes 0-1023/6233 BunnyCDN-IL1-1067	https://images.deepai.org/glossary-terms/f2066cfd2c954d739ae0d2bdfe8e614a/posterior.png	https://deepai.org/definitions
+2	206	image/png	bytes 0-1023/38303 BunnyCDN-IL1-871	https://images.deepai.org/glossary-terms/ef9b91dc66a645938bdd8742cf3ec7e3/attentionmodel.png	https://deepai.org/definitions
+2	206	image/png	bytes 0-1023/6233 BunnyCDN-IL1-871	https://images.deepai.org/glossary-terms/f2066cfd2c954d739ae0d2bdfe8e614a/posterior.png	https://deepai.org/definitions
 3	limit			https://images.deepai.org/glossary-terms/f30fe5a510b74ddfa3378a4233ece8ff/posterior-probability-thumb.jpg	https://deepai.org/machine-learning-glossary-and-terms/posterior-probability
 3	limit			https://images.deepai.org/glossary-terms/fc84871fedd348c5ae5d5e55baf0db06/evaluation-metrics-thumb.jpg	https://deepai.org/machine-learning-glossary-and-terms/evaluation-metrics
 3	limit			https://images.deepai.org/glossary-terms/posterior-probability-4812934.jpg	https://deepai.org/machine-learning-glossary-and-terms/posterior-probability
 3	limit			https://images.deepai.org/job-posting/thomas-wood-thumb-9078.jpg	https://deepai.org/machine-learning-glossary-and-terms/generative-adversarial-network
 3	limit			https://images.deepai.org/machine-learning-models/04e9466d72f64d04a33fd59e5c041d6f/robot-battle-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/0701800c1c884f11992cb1db06a86e2c/intergalactic-battle-generator-thumb.jpg	https://deepai.org/styles
-3	206	image/webp	bytes 0-1023/72434 BunnyCDN-IL1-1068	https://images.deepai.org/machine-learning-models/0774e62c230d4bdd9173155098a3b970/8a23e055a492421b9bc7c67540e118ac.webp	https://deepai.org/machine-learning-model/torch-srgan
+3	206	image/webp	bytes 0-1023/72434 BunnyCDN-IL1-871	https://images.deepai.org/machine-learning-models/0774e62c230d4bdd9173155098a3b970/8a23e055a492421b9bc7c67540e118ac.webp	https://deepai.org/machine-learning-model/torch-srgan
 3	limit			https://images.deepai.org/machine-learning-models/07de4ae7f2e34b23b170d5fa14024357/mecha-suit-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/082098c77a344039b477755198e5d385/abstract-painting-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/0c15beef21ec4375a4656165b760c50a/origami-3d-generator-thumb.jpg	https://deepai.org/styles
@@ -3617,7 +3656,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://images.deepai.org/machine-learning-models/125028c952f04578a05d27e02e6df8bb/samurai-art-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/1274b96969cb4eed9ddc33db5fcdd1e3/spaceship-blueprint-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/1420d6b546da49a198683356e852529f/action-figure-generator-thumb.jpg	https://deepai.org/styles
-2	206	image/jpeg	bytes 0-1023/12307 BunnyCDN-IL1-1067	https://images.deepai.org/machine-learning-models/1497856e7828430aa26fdaf073a08c92/anime-portrait-generator-thumb.jpg	https://deepai.org/machine-learning-model/text2img
+2	206	image/jpeg	bytes 0-1023/12307 BunnyCDN-IL1-871	https://images.deepai.org/machine-learning-models/1497856e7828430aa26fdaf073a08c92/anime-portrait-generator-thumb.jpg	https://deepai.org/machine-learning-model/text2img
 3	limit			https://images.deepai.org/machine-learning-models/1a9e75ba293146f7879183528e27bfdb/tropical-paradise-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/1cfd26dd622e42aba12d77bc4c984ca0/political-satire-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/200566ea7f18476c8e1c419ae9cf60de/photorealistic-portrait-generator-thumb.jpg	https://deepai.org/styles
@@ -3633,7 +3672,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://images.deepai.org/machine-learning-models/30db7e1fa6254d618fd6bea4b721a03e/urban-graffiti-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/32b5be1078434aa2a0eae87a91b44e24/future-architecture-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/32f1b10dd5bb4a26a016c35c9a620c71/supernatural-character-generator-thumb.jpg	https://deepai.org/styles
-2	206	image/svg+xml	bytes 0-1023/2280 BunnyCDN-IL1-1067	https://images.deepai.org/machine-learning-models/337e9a4fd9ff4552ae72c4943aea2b7a/image-gen-loading.svg	https://deepai.org/machine-learning-model/text2img
+2	206	image/svg+xml	bytes 0-1023/2280 BunnyCDN-IL1-871	https://images.deepai.org/machine-learning-models/337e9a4fd9ff4552ae72c4943aea2b7a/image-gen-loading.svg	https://deepai.org/machine-learning-model/text2img
 3	limit			https://images.deepai.org/machine-learning-models/340aac5e3f0c47eb9359689afe0be405/watercolor-architecture-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/36abf50ee64c4a6b95b016af3b0acf0f/space-world-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/389094d48dbe458892342e2abb21a86b/renaissance-fresco-generator-thumb.jpg	https://deepai.org/styles
@@ -3649,7 +3688,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://images.deepai.org/machine-learning-models/4b4a9edcbcf44af1be742fc388105050/mechanical-anatomy-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/4ed7638091e141248e8ac99c95927195/steampunk-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/4f780b4304e2424b8039da88ce33f031/prophetic-vision-generator-thumb.jpg	https://deepai.org/styles
-2	206	image/jpeg	bytes 0-1023/10079 BunnyCDN-IL1-1067	https://images.deepai.org/machine-learning-models/50c039053c6941528c5522e8db312af4/cute-creature-generator-thumb.jpg	https://deepai.org/machine-learning-model/text2img
+2	206	image/jpeg	bytes 0-1023/10079 BunnyCDN-IL1-871	https://images.deepai.org/machine-learning-models/50c039053c6941528c5522e8db312af4/cute-creature-generator-thumb.jpg	https://deepai.org/machine-learning-model/text2img
 3	limit			https://images.deepai.org/machine-learning-models/53d8d133f2f94381a079d494461fa711/waifu_res.png	https://deepai.org/machine-learning-model/waifu2x
 3	limit			https://images.deepai.org/machine-learning-models/548a9f67311c487695f3b496eac97365/contemporary-architecture-generator-thu.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/5585ca7c0c5e492b9b23f8ce7f072d74/fantasy-map-generator-thumb.jpg	https://deepai.org/styles
@@ -3687,24 +3726,24 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://images.deepai.org/machine-learning-models/89c0307cce94415aa57fc979a96d856b/baroque-art-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/8d536e9ddd8241258d6997c527a7a664/mysticism-art-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/8f06a3f311b246a5afac4a0ed71480c6/anime-superhero-generator-thumb.jpg	https://deepai.org/styles
-3	206	image/webp	bytes 0-1023/44736 BunnyCDN-IL1-1068	https://images.deepai.org/machine-learning-models/926cc232a4b64d8895a3134f27d2bf31/eb1eb656d3b545cbba4586608c3bff5f.webp	https://deepai.org/machine-learning-model/background-remover
+3	206	image/webp	bytes 0-1023/44736 BunnyCDN-IL1-871	https://images.deepai.org/machine-learning-models/926cc232a4b64d8895a3134f27d2bf31/eb1eb656d3b545cbba4586608c3bff5f.webp	https://deepai.org/machine-learning-model/background-remover
 3	limit			https://images.deepai.org/machine-learning-models/96076d5348474c099c3f43f26450d17c/dystopian-cyberpunk-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/9d68cdc5af8c455bb481d01bb173d47e/hologram-3d-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/a16a1162e4de47c9aaa21e05a23275ab/colonial-portrait-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/a17a3aafa0b5463eb32bf8159d9d1645/zombie-apocalypse-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/a6d60048061345c0b77a5677408186ed/film-poster-generator-thumb.jpg	https://deepai.org/styles
-2	206	image/jpeg	bytes 0-1023/17672 BunnyCDN-IL1-1067	https://images.deepai.org/machine-learning-models/ab8cfbb6e29f41ad9316302a079ff715/cyberpunk-generator-thumb.jpg	https://deepai.org/machine-learning-model/text2img
+2	206	image/jpeg	bytes 0-1023/17672 BunnyCDN-IL1-871	https://images.deepai.org/machine-learning-models/ab8cfbb6e29f41ad9316302a079ff715/cyberpunk-generator-thumb.jpg	https://deepai.org/machine-learning-model/text2img
 3	limit			https://images.deepai.org/machine-learning-models/acc2843a7d5e47ff82f8b8a006b0d8fa/mars-life-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/ad74707109514733bffe89101ceed784/cave-painting-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/ae2bb3b670154c34b5816efa1308d936/sf_fantasy.jpeg	https://deepai.org/machine-learning-model/fantasy-world-generator
 3	limit			https://images.deepai.org/machine-learning-models/af4d384431974ab5bfda622a20a27695/anime_fairy.jpg	https://deepai.org/machine-learning-model/anime-portrait-generator
 3	limit			https://images.deepai.org/machine-learning-models/aff745e05aea4aa299347786ebd48cfd/3d-character-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/b293ff2b59c84f15a5d4c7ab7e2170d1/minimalistic-art-generator-thumb.jpg	https://deepai.org/styles
-2	206	image/jpeg	bytes 0-1023/11749 BunnyCDN-IL1-1067	https://images.deepai.org/machine-learning-models/b529aefa83d842f080c0149cab9ed496/fantasy-world-generator-thumb.jpg	https://deepai.org/machine-learning-model/text2img
+2	206	image/jpeg	bytes 0-1023/11749 BunnyCDN-IL1-871	https://images.deepai.org/machine-learning-models/b529aefa83d842f080c0149cab9ed496/fantasy-world-generator-thumb.jpg	https://deepai.org/machine-learning-model/text2img
 3	limit			https://images.deepai.org/machine-learning-models/b6dcce965af54c26918924813f3cd288/cyborg.jpg	https://deepai.org/machine-learning-model/cyberpunk-generator
 3	limit			https://images.deepai.org/machine-learning-models/b7a1d3463f6645678d62c41756edef4b/grotesque-art-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/b8e72ae53ba64c3ab0c3fd3b9122d18b/elven-world-generator-thumb.jpg	https://deepai.org/styles
-2	206	image/webp	bytes 0-1023/39734 BunnyCDN-IL1-1067	https://images.deepai.org/machine-learning-models/ba25fbba57eb410e9e2038b78eac5d9a/f078fe461c9c4046be4d810e9e4bb798.webp	https://deepai.org/machine-learning-model/image-editor
+2	206	image/webp	bytes 0-1023/39734 BunnyCDN-IL1-871	https://images.deepai.org/machine-learning-models/ba25fbba57eb410e9e2038b78eac5d9a/f078fe461c9c4046be4d810e9e4bb798.webp	https://deepai.org/machine-learning-model/image-editor
 3	limit			https://images.deepai.org/machine-learning-models/bc00703259884ce6b5dcf35e468c8d24/gothic-art-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/c11ac1c8938246f58e9f5dc823d3bb35/impressionism-painting-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/c2238eb0c3eb454eb597ee607b30e6a0/solar-system-generator-thumb.jpg	https://deepai.org/styles
@@ -3716,7 +3755,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://images.deepai.org/machine-learning-models/cce8545c8068424a961850eb40b11fbd/art-deco-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/cd307f0bc62045dfb880cd4316108ddc/cubist-art-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/cde7b5e709e7420aa15d652d4e17155e/mythic-creature-generator-thumb.jpg	https://deepai.org/styles
-2	206	image/jpeg	bytes 0-1023/2503 BunnyCDN-IL1-1067	https://images.deepai.org/machine-learning-models/d2afc7b3120645308ced92110fac77ae/text2img-thumb.jpg	https://deepai.org/machine-learning-model/text2img
+2	206	image/jpeg	bytes 0-1023/2503 BunnyCDN-IL1-871	https://images.deepai.org/machine-learning-models/d2afc7b3120645308ced92110fac77ae/text2img-thumb.jpg	https://deepai.org/machine-learning-model/text2img
 3	limit			https://images.deepai.org/machine-learning-models/d2afee263cfb4c3380b159ef7e818b3f/urban-fashion-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/d4b1dd3ee43648a997650dc7f9e6923f/panda.jpeg	https://deepai.org/machine-learning-model/cute-creature-generator
 3	limit			https://images.deepai.org/machine-learning-models/d6e945ca0f9741089813ecf993604ac8/greek-mythology-generator-thumb.jpg	https://deepai.org/styles
@@ -3725,7 +3764,7 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://images.deepai.org/machine-learning-models/de3a6c27dfe143bea15573cd54f0303d/concrete-jungle-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/de4923a96564443c99597f71592a5b8c/bauhaus-design-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/e0ff66797a8a45c2ab1691f5a05ff734/old-masters-generator-thumb.jpg	https://deepai.org/styles
-3	206	image/webp	bytes 0-1023/38270 BunnyCDN-IL1-1068	https://images.deepai.org/machine-learning-models/e215347d822043eca34974a141689f3a/5bbbbcdabcb24f8a9783902245aadbc0.webp	https://deepai.org/machine-learning-model/colorizer
+3	206	image/webp	bytes 0-1023/38270 BunnyCDN-IL1-871	https://images.deepai.org/machine-learning-models/e215347d822043eca34974a141689f3a/5bbbbcdabcb24f8a9783902245aadbc0.webp	https://deepai.org/machine-learning-model/colorizer
 3	limit			https://images.deepai.org/machine-learning-models/e74ae217a4e24f3280d022eca6dd9938/surreal-graphics-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/ec1061d313df439f82d46b97596d387d/dreamscape-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/ec22244cfcdc46a6b1406fdd7b892782/gothic-literature-generator-thumb.jpg	https://deepai.org/styles
@@ -3736,91 +3775,93 @@ depth	status	content_type	size_or_server	url	found_in
 3	limit			https://images.deepai.org/machine-learning-models/f08231047aa745d2a04639c216400f0c/atlantis-world-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/f082ddad02b247ac9ad54f3ac6fe238e/bioluminescent-life-generator-thumb.jpg	https://deepai.org/styles
 3	limit			https://images.deepai.org/machine-learning-models/f6b2cb8d8fe1458293bbd3b8b53d41bc/kawaii-emoji-generator-thumb.jpg	https://deepai.org/styles
-3	206	image/webp	bytes 0-1023/46758 BunnyCDN-IL1-1068	https://images.deepai.org/machine-learning-models/fe23671040e14ed38cac7321f7a4aa34/c9c9233f714c42109c801eac26d0cfda.webp	https://deepai.org/machine-learning-model/image-replace
+3	206	image/webp	bytes 0-1023/46758 BunnyCDN-IL1-871	https://images.deepai.org/machine-learning-models/fe23671040e14ed38cac7321f7a4aa34/c9c9233f714c42109c801eac26d0cfda.webp	https://deepai.org/machine-learning-model/image-replace
 3	limit			https://images.deepai.org/machine-learning-models/fee82d8974814829acf7a96352a18c81/romantic-art-generator-thumb.jpg	https://deepai.org/styles
-3	206	image/jpeg	bytes 0-1023/2961 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/065076bd03ff4fab8899838ce0949751/59-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/09890a57030547dabc7e7f371ac80837/18-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/12c778447d5541baab1022dae1777a35/8-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3724 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/1459461eb65045089d451e606a55f51f/52-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3557 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/14f35f10ba93461d99e7c19151353705/34-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3379 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/1a08bb528d3e48889fc0ffc5b06557d4/38-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/5023 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/1e6a871a54be439bbf6cdaf9c2d26eb0/43-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3018 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/23315e8fb29d4bf49317fc8aae92f097/73-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/12349 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/264b5a514f76460ab761b784b97e0a6b/25-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3479 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/2d822bf0606f4803ab92f69f2109ea4f/53-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/4727 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/2e51f78584e44707883b74ade8947fa8/74-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2466 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/319da19c7b9b438c8d6e3ce06b42bc4d/54-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/4491 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/342a23cf89d74220aea52fe1146fd988/48-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3131 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/350beda4ec1f4aed8b9b15cdbe1a2109/44-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2984 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/38be59c9d95e442186822459ab8539eb/50-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3166 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/399529ac65074564a8ffdb11cb02639e/46-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2534 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/3c30c0139c134c31aebfd91143ad407d/68-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2950 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/3c99046e2fcc4195a9695e3a9948a330/67-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2376 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/3ca541ce3d8d4ab28617566ac7fdfac6/66-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3941 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/3de23f068425435f928108d511484efd/71-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/3e420e573e524054ad60390ff87d8034/19-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3858 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/447ef4085bc746048e2e11a32e519b83/32-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/12369 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/45d76975d9ca42c6bfe0e631e5e7c350/30-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3471 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/4baf5bf6212c41089bc977e3b4b0c4fe/26-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2430 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/4c1261070aef45e19515a8f14e36ad45/22-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/7094 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/50a89a4a79ca48ac98760f2f0e9e050d/5-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3615 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/52776fa3b241495280944bbdd475dcd7/61-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3379 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/52a4786c476843e2bb2d004880c7b859/41-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3371 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/53b88311fd714955803255adf2205ec1/69-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/551cf164684c48c59cc7a0e215ec8422/23-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/7154 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/5647763118744e1591024132acbb16aa/45-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/4426 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/58e406ff1d514b8cb8092475450899a0/6-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/8508 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/5d36edc6638d4f708884f99f130d52b7/3-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3073 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/6019b0f9f45b4f348bc650fdb901c5c3/65-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2430 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/62bae4bbf42f453da563aa331207159a/21-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/1851 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/69ab0cd838224213aae2df05a1020395/35-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2535 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/6f80eda88dc64de180c1af02ef05db96/20-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2910 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/6ff625767a274dc682b52dec5fc8f83d/60-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3789 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/76169959c89b45cba65bf66c075dacdc/24-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2696 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/76dbf1a8157e471c84d0cf46118ab3e5/58-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/7745 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/77cbe6f9a632443590956376a786a00e/47-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3472 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/77d316530729450784be998477932a63/29-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3406 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/7904c9a797614904bdb1ed201d22d4f5/33-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2226 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/7ee8cf8930654f55bc0fc96fb4d7a8e1/37-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/5515 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/7fcd30fa669c47b4afdc3f5b81c2b5a2/2-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3941 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/814240a4b0694145bced7bcd123177df/15-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2564 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/84255b3e817e4851b580d64d1d36b44e/63-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2456 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/88948f158db7488c98158beddd527afa/64-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3406 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/88c3e349dbfa4cf097e9c145e765ee55/42-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/91683913608b4acaaad7010db6bbaac5/16-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/965b009520814311bc7befae5ba33991/7-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3406 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/969eafb6999446728169471e84f7d959/36-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/4074 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/96fbb52881874879a3a6165d02caf1aa/40-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2925 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/9b36a1eaa7724100998bf5a5b3df86a0/11-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/4252 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/aa7b399a567a48998ecfe23e217c85c4/62-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3528 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/ae1b1f44b8124805ac2c81b528560830/49-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3280 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/ae20573bf81a47d68c6a6af18ce1901e/12-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2948 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/b4ff3b84c1d94fe6b3bc990fda7dc82b/75-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3406 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/b84369a358b14e28aef79bcd649b6be2/31-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2840 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/c957d9af53e14643b144063f076bddf5/56-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/ca636ecc614548e88f45f6fe8a01922f/9-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/12349 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/ccc08dae2cdc42e8ac64e024625b79aa/27-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/12349 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/ccd106c85e2943678dedc76a65c72c49/4-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2814 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/cd93262a6093405aba339540d05c4d24/70-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/4325 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/d129848762534470829315b42a3b25d3/55-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/d2f6236d073d4361b4c74c47e917d65e/14-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3564 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/d526761b07c2474c90f1a52b5b60c4d9/39-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/5626 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/dc9ba6ddaa8041eb88cf8a29e74f6c42/28-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/2997 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/f11dc23e86e1458fb1325bbd90c82006/10-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/4796 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/f174b0403d2c4869a52778824dc1a7ed/17-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/4023 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/f5fdd492b6b2466cb9e08a0cbf51b0fb/57-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/f99521a1c6bc4fb7a7bff50afd7ec27e/13-thumb.jpg	https://deepai.org/press
-3	206	image/jpeg	bytes 0-1023/3964 BunnyCDN-IL1-1068	https://images.deepai.org/press-item-image/fcb902864d3347659a738b9380d4d7ba/72-thumb.jpg	https://deepai.org/press
-2	206	image/jpeg	bytes 0-1023/109203 BunnyCDN-IL1-1067	https://images.deepai.org/sample-videos/anime-thumb.jpg	https://deepai.org/video
-2	206	video/mp4	bytes 0-1023/1624063 BunnyCDN-IL1-1067	https://images.deepai.org/sample-videos/anime.mp4	https://deepai.org/video
-2	206	image/jpeg	bytes 0-1023/123600 BunnyCDN-IL1-1067	https://images.deepai.org/sample-videos/flower-thumb.jpg	https://deepai.org/video
-2	206	video/mp4	bytes 0-1023/5422044 BunnyCDN-IL1-1067	https://images.deepai.org/sample-videos/flower.mp4	https://deepai.org/video
-2	206	image/jpeg	bytes 0-1023/75344 BunnyCDN-IL1-1067	https://images.deepai.org/sample-videos/interview-thumb.jpg	https://deepai.org/video
-2	206	video/mp4	bytes 0-1023/1638450 BunnyCDN-IL1-1067	https://images.deepai.org/sample-videos/interview.mp4	https://deepai.org/video
-2	206	image/jpeg	bytes 0-1023/117757 BunnyCDN-IL1-1067	https://images.deepai.org/sample-videos/madmax-thumb.jpg	https://deepai.org/video
-2	206	video/mp4	bytes 0-1023/9195335 BunnyCDN-IL1-1067	https://images.deepai.org/sample-videos/madmax.mp4	https://deepai.org/video
-2	206	image/jpeg	bytes 0-1023/51661 BunnyCDN-IL1-1067	https://images.deepai.org/sample-videos/superdog-thumb.jpg	https://deepai.org/video
-2	206	video/mp4	bytes 0-1023/1713843 BunnyCDN-IL1-1067	https://images.deepai.org/sample-videos/superdog.mp4	https://deepai.org/video
+3	206	image/jpeg	bytes 0-1023/2961 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/065076bd03ff4fab8899838ce0949751/59-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/09890a57030547dabc7e7f371ac80837/18-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/12c778447d5541baab1022dae1777a35/8-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3724 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/1459461eb65045089d451e606a55f51f/52-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3557 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/14f35f10ba93461d99e7c19151353705/34-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3379 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/1a08bb528d3e48889fc0ffc5b06557d4/38-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/5023 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/1e6a871a54be439bbf6cdaf9c2d26eb0/43-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3018 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/23315e8fb29d4bf49317fc8aae92f097/73-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/12349 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/264b5a514f76460ab761b784b97e0a6b/25-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3479 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/2d822bf0606f4803ab92f69f2109ea4f/53-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/4727 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/2e51f78584e44707883b74ade8947fa8/74-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2466 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/319da19c7b9b438c8d6e3ce06b42bc4d/54-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/4491 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/342a23cf89d74220aea52fe1146fd988/48-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3131 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/350beda4ec1f4aed8b9b15cdbe1a2109/44-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2984 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/38be59c9d95e442186822459ab8539eb/50-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3166 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/399529ac65074564a8ffdb11cb02639e/46-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2534 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/3c30c0139c134c31aebfd91143ad407d/68-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2950 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/3c99046e2fcc4195a9695e3a9948a330/67-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2376 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/3ca541ce3d8d4ab28617566ac7fdfac6/66-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3941 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/3de23f068425435f928108d511484efd/71-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/3e420e573e524054ad60390ff87d8034/19-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3858 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/447ef4085bc746048e2e11a32e519b83/32-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/12369 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/45d76975d9ca42c6bfe0e631e5e7c350/30-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3471 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/4baf5bf6212c41089bc977e3b4b0c4fe/26-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2430 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/4c1261070aef45e19515a8f14e36ad45/22-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/7094 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/50a89a4a79ca48ac98760f2f0e9e050d/5-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3615 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/52776fa3b241495280944bbdd475dcd7/61-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3379 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/52a4786c476843e2bb2d004880c7b859/41-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3371 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/53b88311fd714955803255adf2205ec1/69-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/551cf164684c48c59cc7a0e215ec8422/23-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/7154 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/5647763118744e1591024132acbb16aa/45-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/4426 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/58e406ff1d514b8cb8092475450899a0/6-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/8508 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/5d36edc6638d4f708884f99f130d52b7/3-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3073 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/6019b0f9f45b4f348bc650fdb901c5c3/65-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2430 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/62bae4bbf42f453da563aa331207159a/21-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/1851 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/69ab0cd838224213aae2df05a1020395/35-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2535 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/6f80eda88dc64de180c1af02ef05db96/20-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2910 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/6ff625767a274dc682b52dec5fc8f83d/60-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3789 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/76169959c89b45cba65bf66c075dacdc/24-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2696 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/76dbf1a8157e471c84d0cf46118ab3e5/58-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/7745 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/77cbe6f9a632443590956376a786a00e/47-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3472 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/77d316530729450784be998477932a63/29-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3406 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/7904c9a797614904bdb1ed201d22d4f5/33-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2226 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/7ee8cf8930654f55bc0fc96fb4d7a8e1/37-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/5515 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/7fcd30fa669c47b4afdc3f5b81c2b5a2/2-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3941 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/814240a4b0694145bced7bcd123177df/15-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2564 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/84255b3e817e4851b580d64d1d36b44e/63-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2456 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/88948f158db7488c98158beddd527afa/64-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3406 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/88c3e349dbfa4cf097e9c145e765ee55/42-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/91683913608b4acaaad7010db6bbaac5/16-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/965b009520814311bc7befae5ba33991/7-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3406 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/969eafb6999446728169471e84f7d959/36-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/4074 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/96fbb52881874879a3a6165d02caf1aa/40-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2925 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/9b36a1eaa7724100998bf5a5b3df86a0/11-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/4252 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/aa7b399a567a48998ecfe23e217c85c4/62-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3528 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/ae1b1f44b8124805ac2c81b528560830/49-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3280 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/ae20573bf81a47d68c6a6af18ce1901e/12-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2948 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/b4ff3b84c1d94fe6b3bc990fda7dc82b/75-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3406 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/b84369a358b14e28aef79bcd649b6be2/31-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2840 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/c957d9af53e14643b144063f076bddf5/56-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/ca636ecc614548e88f45f6fe8a01922f/9-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/12349 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/ccc08dae2cdc42e8ac64e024625b79aa/27-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/12349 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/ccd106c85e2943678dedc76a65c72c49/4-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2814 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/cd93262a6093405aba339540d05c4d24/70-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/4325 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/d129848762534470829315b42a3b25d3/55-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/d2f6236d073d4361b4c74c47e917d65e/14-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3564 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/d526761b07c2474c90f1a52b5b60c4d9/39-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/5626 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/dc9ba6ddaa8041eb88cf8a29e74f6c42/28-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/2997 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/f11dc23e86e1458fb1325bbd90c82006/10-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/4796 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/f174b0403d2c4869a52778824dc1a7ed/17-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/4023 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/f5fdd492b6b2466cb9e08a0cbf51b0fb/57-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3571 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/f99521a1c6bc4fb7a7bff50afd7ec27e/13-thumb.jpg	https://deepai.org/press
+3	206	image/jpeg	bytes 0-1023/3964 BunnyCDN-IL1-871	https://images.deepai.org/press-item-image/fcb902864d3347659a738b9380d4d7ba/72-thumb.jpg	https://deepai.org/press
+2	206	image/jpeg	bytes 0-1023/30572 BunnyCDN-IL1-871	https://images.deepai.org/sample-videos/dragon-ride-thumb.jpg	https://deepai.org/video
+2	206	video/mp4	bytes 0-1023/3705668 BunnyCDN-IL1-871	https://images.deepai.org/sample-videos/dragon-ride.mp4	https://deepai.org/video
+2	206	image/jpeg	bytes 0-1023/25292 BunnyCDN-IL1-871	https://images.deepai.org/sample-videos/kitty-dragon-thumb.jpg	https://deepai.org/video
+2	206	video/mp4	bytes 0-1023/2079805 BunnyCDN-IL1-871	https://images.deepai.org/sample-videos/kitty-dragon.mp4	https://deepai.org/video
+2	206	image/jpeg	bytes 0-1023/24821 BunnyCDN-IL1-871	https://images.deepai.org/sample-videos/movie-style-thumb.jpg	https://deepai.org/video
+2	206	video/mp4	bytes 0-1023/850427 BunnyCDN-IL1-871	https://images.deepai.org/sample-videos/movie-style.mp4	https://deepai.org/video
+2	206	image/jpeg	bytes 0-1023/40057 BunnyCDN-IL1-871	https://images.deepai.org/sample-videos/plastic-doll-thumb.jpg	https://deepai.org/video
+2	206	video/mp4	bytes 0-1023/4696175 BunnyCDN-IL1-871	https://images.deepai.org/sample-videos/plastic-doll.mp4	https://deepai.org/video
+2	206	image/jpeg	bytes 0-1023/24630 BunnyCDN-IL1-871	https://images.deepai.org/sample-videos/tokyo-drift-thumb.jpg	https://deepai.org/video
+2	206	video/mp4	bytes 0-1023/3187014 BunnyCDN-IL1-871	https://images.deepai.org/sample-videos/tokyo-drift.mp4	https://deepai.org/video
+2	206	image/jpeg	bytes 0-1023/29465 BunnyCDN-IL1-871	https://images.deepai.org/sample-videos/ugg-style-thumb.jpg	https://deepai.org/video
+2	206	video/mp4	bytes 0-1023/2194766 BunnyCDN-IL1-871	https://images.deepai.org/sample-videos/ugg-style.mp4	https://deepai.org/video
 3	limit			https://images.deepai.org/user-content/0006343744-thumb-958.svg	https://deepai.org/machine-learning-glossary-and-terms/generative-adversarial-network
 3	limit			https://images.deepai.org/user-content/0029823553-thumb-8912.svg	https://deepai.org/machine-learning-glossary-and-terms/convolutional-neural-network
 3	limit			https://images.deepai.org/user-content/0060525236-thumb-9001.svg	https://deepai.org/machine-learning-glossary-and-terms/f-score

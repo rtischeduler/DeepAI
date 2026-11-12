@@ -470,7 +470,12 @@ body{min-height:100dvh!important;padding-top:0!important}
 .new-chat-button-container{top:10px!important}
 .sidebar-new-chat-btn,.sidebar-close-btn,.new-chat-button,.compose-plus-btn,.chat-chip,.delete-all-history-button,.sidebar-toggle-btn,.chat-mode-dropdown-trigger{background:#141414!important;border:1px solid rgba(255,255,255,.14)!important;color:#fff!important;box-shadow:none!important;opacity:1!important;transition:border-color .25s ease,background-color .25s ease,color .25s ease!important}
 .sidebar-new-chat-btn:hover,.sidebar-close-btn:hover,.new-chat-button:hover,.compose-plus-btn:hover,.chat-chip:hover,.delete-all-history-button:hover,.sidebar-toggle-btn:hover,.chat-mode-dropdown-trigger:hover,.chatoptionsBox button:hover,.optionsBox button:hover,.attach-dropdown-item:hover,.presets-dropdown-item:hover,.chat-mode-menu-item:hover{background:#fff!important;color:#000!important;border-color:#fff!important}
-.sidebar-new-chat-btn:hover svg,.sidebar-close-btn:hover svg,.new-chat-button:hover svg,.compose-plus-btn:hover svg,.chat-chip:hover img,.chat-chip:hover svg,.delete-all-history-button:hover svg,.sidebar-toggle-btn:hover svg,.chat-mode-dropdown-trigger:hover svg,.chatoptionsBox button:hover svg,.optionsBox button:hover svg,.attach-dropdown-item:hover svg,.attach-dropdown-item:hover img,.presets-dropdown-item:hover img{filter:invert(1)!important}
+.compose-plus-btn.open,.compose-plus-btn.open:hover{background:#fff!important;color:#000!important;border-color:#fff!important;transform:none!important}
+.compose-plus-btn,.compose-plus-btn.open{transform:none!important}
+.sidebar-new-chat-btn:hover svg [stroke="white"],.sidebar-close-btn:hover svg [stroke="white"],.new-chat-button:hover svg [stroke="white"],.sidebar-toggle-btn:hover svg [stroke="white"],.chatoptionsBox button:hover svg [stroke="white"],.optionsBox button:hover svg [stroke="white"]{stroke:#000!important}
+.sidebar-new-chat-btn:hover svg [fill="white"],.sidebar-close-btn:hover svg [fill="white"],.new-chat-button:hover svg [fill="white"],.sidebar-toggle-btn:hover svg [fill="white"],.chatoptionsBox button:hover svg [fill="white"],.optionsBox button:hover svg [fill="white"]{fill:#000!important}
+.sidebar-new-chat-btn:hover svg,.sidebar-close-btn:hover svg,.new-chat-button:hover svg,.compose-plus-btn:hover svg,.compose-plus-btn.open svg,.delete-all-history-button:hover svg,.sidebar-toggle-btn:hover svg,.chat-mode-dropdown-trigger:hover svg,.chatoptionsBox button:hover svg,.optionsBox button:hover svg,.attach-dropdown-item:hover svg,.presets-dropdown-item:hover svg{color:#000!important}
+.chat-chip:hover img,.attach-dropdown-item:hover img,.presets-dropdown-item:hover img{filter:invert(1)!important}
 .attach-dropdown-item:hover *,.presets-dropdown-item:hover *,.chat-mode-menu-item:hover *{color:#000!important}
 .chat-history-search-input{background:#141414!important;border:1px solid rgba(255,255,255,.14)!important;color:#fff!important}
 .chat-history-search-input:focus{border-color:#fff!important;outline:none!important}
@@ -491,6 +496,24 @@ pre,.code-block-wrapper,.code-block-wrapper pre{background:#000!important;border
 .ai-disclaimer{opacity:.4!important}
 ::selection{background:rgba(255,255,255,.28)}
 *{scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.28) transparent}
+.chat-history-search-container::after{display:none!important}
+.sidebar-footer{background:#0a0a0a!important;border-top:1px solid rgba(255,255,255,.14)!important}
+.sidebar-scroll-wrapper{scrollbar-color:rgba(255,255,255,.28) transparent!important}
+.chat-history-items{padding-top:8px!important}
+.chat-mode-menu-item.selected,.chat-mode-menu-item.selected:hover,.chat-mode-menu-item.menu-arrow-hl,.chat-mode-menu-item.menu-arrow-hl.selected,.presets-dropdown-item.selected,.presets-dropdown-item.selected:hover,.active-mode-chip,.active-mode-chip:hover,.attach-dropdown-toggle.active,.attach-dropdown-toggle.active:hover,.attach-dropdown-toggle.active.plus-menu-hl{background:rgba(255,255,255,.16)!important;color:#fff!important;border-color:rgba(255,255,255,.14)!important}
+.presets-dropdown-item.selected svg,.attach-dropdown-toggle.active svg,.active-mode-chip svg{color:#fff!important}
+.pro-badge,.beta-badge,.model-page-pro-badge,.sources-badge,.thinking-badge{background:rgba(255,255,255,.14)!important;color:#fff!important;border-color:rgba(255,255,255,.14)!important}
+[role="switch"][aria-checked="true"] .attach-dropdown-switch,.oc-toggle input[type="checkbox"]:checked + .oc-toggle-slider{background:#fff!important}
+[role="switch"][aria-checked="true"] .attach-dropdown-switch::after{background:#000!important}
+#deepaiProgressBar{background:#fff!important}
+.results-tab.active{background:rgba(255,255,255,.16)!important;color:#fff!important;border-color:#fff!important}
+.cmd-palette-match,.cmd-palette-current-dot{color:#fff!important;background-color:transparent!important}
+.chatEditSubmitButton{background:#fff!important;color:#000!important;border-color:#fff!important}
+.optionsBox button:focus-visible,.chatoptionsBox button:focus-visible{outline:1px solid #fff!important;box-shadow:none!important}
+#upload-successful{background:#141414!important;border:1px solid rgba(255,255,255,.14)!important}
+:root{--purple:#fff;--pink:#fff}
+.more-models-btn,.model-menu-divider,.pin-model-btn{display:none!important}
+#chatModeMenu{max-height:60vh!important;overflow-y:auto!important}
 `;
 
 const $ = (id) => document.getElementById(id);
@@ -795,6 +818,11 @@ async function fetchText(url, ms = 60000) {
 async function buildDocument() {
   say("Loading DeepAI…");
   let html = await fetchText(SITE + "/chat");
+  html = html
+    .split('const divider=document.createElement("div");divider.className="model-menu-divider";menu.appendChild(divider);const moreBtn=document.createElement("div");')
+    .join('const moreBtn=document.createElement("div");')
+    .split("menu.appendChild(moreBtn);}")
+    .join("extendedModels.forEach((mode)=>{if(pinnedValues.includes(mode.value))return;const item=createMenuItem(mode,savedMode,canUseGenius);item.appendChild(createPinBtn(mode.value));menu.appendChild(item);});}");
   if (!/<head[\s>]/i.test(html) || !/chatMain/.test(html)) throw new Error("DeepAI returned an unexpected page");
   const tags = [...html.matchAll(/<script\b[^>]*\bsrc\s*=\s*["']([^"']+)["'][^>]*>\s*<\/script>/gi)];
   say("Loading scripts…");

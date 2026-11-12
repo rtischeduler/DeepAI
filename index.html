@@ -773,6 +773,10 @@ async function buildDocument() {
     }
   }));
   for (const [from, to] of swaps) html = html.replace(from, () => to);
+  html = html
+    .replace(/window\.location\.hostname\s*===\s*["']deepai\.org["']/g, "true")
+    .replace(/window\.top\.location\.href\s*=\s*window\.location\.href/g, "void 0")
+    .replace(/function applyStoredLanguage\(\)\s*\{/, (m) => m + "return false;");
   html = html.replace(/<head[^>]*>/i, (h) => h + '<base href="' + SITE + '/"><script>(' + shim.toString() + ")();<\/script>");
   html = html.replace(/<\/head>/i, () => '<style id="px-style">' + RESTYLE + "</style></head>");
   return html;

@@ -2,6 +2,16 @@
 
 Reverse-engineering workspace for `https://deepai.org/chat`, with requests sent through Singuloxy (libcurl + wisp) the same way `rtischeduler/WebBlox` does it.
 
+## index.html
+
+A single page that proxies the real DeepAI chat through Singuloxy and shows only the chat. It uses the same proxy layer as `rtischeduler/SingularityNOW` (wisp list sync, probing, verification, automatic switching and retry).
+
+- The page `https://deepai.org/chat` is fetched through the proxy, its own scripts are inlined, and it runs inside a frame on this page.
+- Every request the page makes (chat, models, login, attachment upload and download, images) goes through Singuloxy with a cookie jar kept in `localStorage`. Request bodies are encoded to bytes in the browser first, so attachment uploads reach DeepAI as a finished multipart body.
+- The site header, footer, banners and promos are hidden and a dark restyle is applied on top. Ads and analytics scripts are blocked.
+- Sign-in is available from the chat's own sign-in prompt, which appears when the free limit is reached.
+- If the proxy drops, a "Switch proxy" button appears.
+
 ## Pulling the site
 
 Run the `pull-deepai` workflow (Actions tab, Run workflow). Inputs: start page (default `https://deepai.org/chat`), output folder (default `Site`), extra hosts to follow. It saves every text file it can reach into `Site/files/<host>/...` and writes `Site/index.tsv` (status per URL), `Site/urls.txt` and `Site/endpoints.tsv` (API-looking strings found in scripts), then commits the result.

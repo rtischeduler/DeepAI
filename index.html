@@ -3,27 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0b0c10">
+<meta name="theme-color" content="#000000">
 <title>DeepAI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #0b0c10;
-  --panel: #14161d;
-  --line: #242732;
-  --text: #e9eaf0;
-  --muted: #8a8fa0;
-  --accent: #8f37ff;
-  --accent2: #a964ff;
+  --bg: #000000;
+  --panel: #141414;
+  --line: rgba(255, 255, 255, 0.14);
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.6);
+  --accent: #ffffff;
+  --accent2: #ffffff;
   --bad: #ff5d6c;
 }
 * { box-sizing: border-box; }
 html, body {
   height: 100%;
   margin: 0;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(255, 255, 255, 0.07), transparent 70%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.13) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.13) 1px, transparent 1px);
+  background-size: 100% 100%, 44px 44px, 44px 44px;
   color: var(--text);
-  font: 15px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: bold 15px/1.5 "Comfortaa", sans-serif;
 }
+* { font-family: "Comfortaa", sans-serif; font-weight: bold; -webkit-tap-highlight-color: transparent; }
 #app {
   position: fixed;
   inset: 0;
@@ -69,13 +78,14 @@ button {
   color: var(--text);
   background: var(--panel);
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 0;
   padding: 8px 14px;
   cursor: pointer;
+  transition: border-color 0.25s ease, background-color 0.25s ease, color 0.25s ease;
 }
-button:hover { border-color: var(--accent); }
-button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-button.primary:hover { background: var(--accent2); }
+button:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+button.primary { background: var(--text); border-color: var(--text); color: var(--bg); }
+button.primary:hover { background: var(--bg); color: var(--text); }
 #toast {
   position: fixed;
   left: 50%;
@@ -90,7 +100,7 @@ button.primary:hover { background: var(--accent2); }
   font-size: 13px;
   background: var(--panel);
   border: 1px solid var(--bad);
-  border-radius: 12px;
+  border-radius: 0;
 }
 #toast.show { display: flex; }
 #toast button { padding: 4px 10px; }
@@ -444,17 +454,43 @@ body>header,body>footer,#language-banner,#announcement-banner,.language-banner,.
 #voicePillButton,#websiteBuilderPillButton,#chatMemoryPillButton,#chatMemorySettingsButton,.pro-only-pill,#chat-memory-modal-root,.chat-memory-modal{display:none!important}
 .landing-title-group>h1,.landing-title-group .landing-description-group>h3{display:none!important}
 .chat-model-chip:has(.model-chip-lock),.chat-mode-menu-item.chat-mode-locked,.chat-mode-menu-item:has(.chat-mode-lock-icon),.slash-cmd-item:has(img[src*="lock-icon"]),.cmd-palette-item:has(.cmd-palette-item-lock),.presets-dropdown-item:has(img[src*="lock-icon"]),.attach-dropdown-item:has(img[src*="lock-icon"]),.attach-dropdown-item:has(.pro-lock-icon),.chat-chip:has(img[src*="lock-icon"]){display:none!important}
-html,body{background:#0b0c10!important;background-image:none!important;color:#e9eaf0;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+html,body{background-color:#000!important;background-image:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(255,255,255,.07),transparent 70%),linear-gradient(to right,rgba(255,255,255,.13) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,.13) 1px,transparent 1px)!important;background-size:100% 100%,44px 44px,44px 44px!important;background-attachment:fixed!important;color:#fff!important}
+*,*::before,*::after{border-radius:0!important;font-family:"Comfortaa",sans-serif!important;font-weight:700!important;-webkit-tap-highlight-color:transparent}
+pre,pre *,code,code *,.code-block-wrapper *{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace!important}
+.katex,.katex *{font-family:KaTeX_Main,"Times New Roman",serif!important}
+*{-webkit-user-select:none;user-select:none}
+.outputBox,.outputBox *,.chatbox-wrapper,.chatbox-wrapper *,textarea,input{-webkit-user-select:text!important;user-select:text!important}
 body{min-height:100dvh!important;padding-top:0!important}
 .chat-main{min-height:100dvh!important}
-.chat-sidebar{top:0!important;bottom:0!important;left:0!important;border-radius:0!important;border:0!important;border-right:1px solid #1e2029!important;background:#101117!important}
+.chat-sidebar{top:12px!important;bottom:12px!important;left:12px!important;width:260px!important;background:#0a0a0a!important;border:1px solid rgba(255,255,255,.14)!important;box-shadow:none!important;backdrop-filter:blur(12px)}
+.chat-layout-container.sidebar-open .chat-main{margin-left:284px!important}
+@media(max-width:720px){.chat-sidebar{top:0!important;bottom:0!important;left:0!important;width:min(300px,85vw)!important;box-shadow:0 0 40px rgba(0,0,0,.55)!important}.chat-layout-container.sidebar-open .chat-main{margin-left:0!important}}
+.sidebar-top-bar{border-bottom:1px solid rgba(255,255,255,.14)!important}
 .sidebar-toggle-container{top:10px!important;left:12px!important}
-.sidebar-new-chat-btn{border-radius:12px!important}
-#attachDropdownMenu,#chatModeMenu,#presetsDropdownMenu,.presets-dropdown-menu{background:#15171f!important;border:1px solid #262933!important;border-radius:14px!important}
-#chatSubmitButton{background:#8f37ff!important;border-color:#8f37ff!important}
-#chatSubmitButton:hover{background:#a964ff!important}
-::selection{background:rgba(143,55,255,.35)}
-*{scrollbar-width:thin;scrollbar-color:#2a2d38 transparent}
+.new-chat-button-container{top:10px!important}
+.sidebar-new-chat-btn,.sidebar-close-btn,.new-chat-button,.compose-plus-btn,.chat-chip,.delete-all-history-button,.sidebar-toggle-btn,.chat-mode-dropdown-trigger{background:#141414!important;border:1px solid rgba(255,255,255,.14)!important;color:#fff!important;box-shadow:none!important;opacity:1!important;transition:border-color .25s ease,background-color .25s ease,color .25s ease!important}
+.sidebar-new-chat-btn:hover,.sidebar-close-btn:hover,.new-chat-button:hover,.compose-plus-btn:hover,.chat-chip:hover,.delete-all-history-button:hover,.sidebar-toggle-btn:hover,.chat-mode-dropdown-trigger:hover,.chatoptionsBox button:hover,.optionsBox button:hover,.attach-dropdown-item:hover,.presets-dropdown-item:hover,.chat-mode-menu-item:hover{background:#fff!important;color:#000!important;border-color:#fff!important}
+.sidebar-new-chat-btn:hover svg,.sidebar-close-btn:hover svg,.new-chat-button:hover svg,.compose-plus-btn:hover svg,.chat-chip:hover img,.chat-chip:hover svg,.delete-all-history-button:hover svg,.sidebar-toggle-btn:hover svg,.chat-mode-dropdown-trigger:hover svg,.chatoptionsBox button:hover svg,.optionsBox button:hover svg,.attach-dropdown-item:hover svg,.attach-dropdown-item:hover img,.presets-dropdown-item:hover img{filter:invert(1)!important}
+.attach-dropdown-item:hover *,.presets-dropdown-item:hover *,.chat-mode-menu-item:hover *{color:#000!important}
+.chat-history-search-input{background:#141414!important;border:1px solid rgba(255,255,255,.14)!important;color:#fff!important}
+.chat-history-search-input:focus{border-color:#fff!important;outline:none!important}
+#chatHistoryList>*{border:1px solid transparent!important;opacity:.85}
+#chatHistoryList>*:hover{background:rgba(255,255,255,.09)!important;border-color:rgba(255,255,255,.14)!important;opacity:1}
+.sidebar-footer{border-top:1px solid rgba(255,255,255,.14)!important}
+#attachDropdownMenu,#chatModeMenu,#presetsDropdownMenu,.presets-dropdown-menu{background:#0a0a0a!important;border:1px solid rgba(255,255,255,.14)!important;box-shadow:none!important}
+.persistent-compose-area{background:#141414!important;border:1px solid rgba(255,255,255,.14)!important;box-shadow:none!important;transition:border-color .3s ease,box-shadow .3s ease!important}
+.persistent-compose-area:focus-within{border-color:#fff!important;box-shadow:0 0 0 3px rgba(255,255,255,.3)!important}
+#persistentChatbox{font-size:.9rem!important;color:#fff!important}
+#persistentChatbox::placeholder{color:#fff!important;opacity:.4!important}
+#chatSubmitButton{background:#fff!important;border:none!important;color:#000!important}
+#chatSubmitButton img,#chatSubmitButton svg{filter:invert(1)!important}
+#chatSubmitButton:hover{background:#fff!important;transform:translateY(-1px)}
+.chatbox-wrapper .chatbox{background:#141414!important;border:1px solid rgba(255,255,255,.14)!important;font-size:.95rem!important;line-height:1.6!important}
+.outputBox{font-size:.95rem!important;line-height:1.6!important}
+pre,.code-block-wrapper,.code-block-wrapper pre{background:#000!important;border:1px solid rgba(255,255,255,.14)!important}
+.ai-disclaimer{opacity:.4!important}
+::selection{background:rgba(255,255,255,.28)}
+*{scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.28) transparent}
 `;
 
 const $ = (id) => document.getElementById(id);
@@ -781,7 +817,7 @@ async function buildDocument() {
     .replace(/window\.top\.location\.href\s*=\s*window\.location\.href/g, "void 0")
     .replace(/function applyStoredLanguage\(\)\s*\{/, (m) => m + "return false;");
   html = html.replace(/<head[^>]*>/i, (h) => h + '<base href="' + SITE + '/"><script>(' + shim.toString() + ")();<\/script>");
-  html = html.replace(/<\/head>/i, () => '<style id="px-style">' + RESTYLE + "</style></head>");
+  html = html.replace(/<\/head>/i, () => '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"><style id="px-style">' + RESTYLE + "</style></head>");
   return html;
 }
 

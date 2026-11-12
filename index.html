@@ -468,13 +468,13 @@ body{min-height:100dvh!important;padding-top:0!important}
 .sidebar-top-bar{border-bottom:1px solid rgba(255,255,255,.14)!important}
 .sidebar-toggle-container{top:10px!important;left:12px!important}
 .new-chat-button-container{top:10px!important}
-.sidebar-new-chat-btn,.sidebar-close-btn,.new-chat-button,.compose-plus-btn,.chat-chip,.delete-all-history-button,.sidebar-toggle-btn,.chat-mode-dropdown-trigger{background:#141414!important;border:1px solid rgba(255,255,255,.14)!important;color:#fff!important;box-shadow:none!important;opacity:1!important;transition:border-color .25s ease,background-color .25s ease,color .25s ease!important}
-.sidebar-new-chat-btn:hover,.sidebar-close-btn:hover,.new-chat-button:hover,.compose-plus-btn:hover,.chat-chip:hover,.delete-all-history-button:hover,.sidebar-toggle-btn:hover,.chat-mode-dropdown-trigger:hover,.chatoptionsBox button:hover,.optionsBox button:hover,.attach-dropdown-item:hover,.presets-dropdown-item:hover,.chat-mode-menu-item:hover{background:#fff!important;color:#000!important;border-color:#fff!important}
+.sidebar-new-chat-btn,.sidebar-close-btn,.new-chat-button,.compose-plus-btn,.chat-chip,.delete-all-history-button,.sidebar-toggle,.chat-mode-dropdown-trigger{background:#141414!important;border:1px solid rgba(255,255,255,.14)!important;color:#fff!important;box-shadow:none!important;opacity:1!important;transition:border-color .25s ease,background-color .25s ease,color .25s ease!important}
+.sidebar-new-chat-btn:hover,.sidebar-close-btn:hover,.new-chat-button:hover,.compose-plus-btn:hover,.chat-chip:hover,.delete-all-history-button:hover,.sidebar-toggle:hover,.chat-mode-dropdown-trigger:hover,.chatoptionsBox button:hover,.optionsBox button:hover,.attach-dropdown-item:hover,.presets-dropdown-item:hover,.chat-mode-menu-item:hover{background:#fff!important;color:#000!important;border-color:#fff!important}
 .compose-plus-btn.open,.compose-plus-btn.open:hover{background:#fff!important;color:#000!important;border-color:#fff!important;transform:none!important}
 .compose-plus-btn,.compose-plus-btn.open{transform:none!important}
-.sidebar-new-chat-btn:hover svg [stroke="white"],.sidebar-close-btn:hover svg [stroke="white"],.new-chat-button:hover svg [stroke="white"],.sidebar-toggle-btn:hover svg [stroke="white"],.chatoptionsBox button:hover svg [stroke="white"],.optionsBox button:hover svg [stroke="white"]{stroke:#000!important}
-.sidebar-new-chat-btn:hover svg [fill="white"],.sidebar-close-btn:hover svg [fill="white"],.new-chat-button:hover svg [fill="white"],.sidebar-toggle-btn:hover svg [fill="white"],.chatoptionsBox button:hover svg [fill="white"],.optionsBox button:hover svg [fill="white"]{fill:#000!important}
-.sidebar-new-chat-btn:hover svg,.sidebar-close-btn:hover svg,.new-chat-button:hover svg,.compose-plus-btn:hover svg,.compose-plus-btn.open svg,.delete-all-history-button:hover svg,.sidebar-toggle-btn:hover svg,.chat-mode-dropdown-trigger:hover svg,.chatoptionsBox button:hover svg,.optionsBox button:hover svg,.attach-dropdown-item:hover svg,.presets-dropdown-item:hover svg{color:#000!important}
+.sidebar-new-chat-btn:hover svg [stroke="white"],.sidebar-close-btn:hover svg [stroke="white"],.new-chat-button:hover svg [stroke="white"],.sidebar-toggle:hover svg [stroke="white"],.chatoptionsBox button:hover svg [stroke="white"],.optionsBox button:hover svg [stroke="white"]{stroke:#000!important}
+.sidebar-new-chat-btn:hover svg [fill="white"],.sidebar-close-btn:hover svg [fill="white"],.new-chat-button:hover svg [fill="white"],.sidebar-toggle:hover svg [fill="white"],.chatoptionsBox button:hover svg [fill="white"],.optionsBox button:hover svg [fill="white"]{fill:#000!important}
+.sidebar-new-chat-btn:hover svg,.sidebar-close-btn:hover svg,.new-chat-button:hover svg,.compose-plus-btn:hover svg,.compose-plus-btn.open svg,.delete-all-history-button:hover svg,.sidebar-toggle:hover svg,.chat-mode-dropdown-trigger:hover svg,.chatoptionsBox button:hover svg,.optionsBox button:hover svg,.attach-dropdown-item:hover svg,.presets-dropdown-item:hover svg{color:#000!important}
 .chat-chip:hover img,.attach-dropdown-item:hover img,.presets-dropdown-item:hover img{filter:invert(1)!important}
 .attach-dropdown-item:hover *,.presets-dropdown-item:hover *,.chat-mode-menu-item:hover *{color:#000!important}
 .chat-history-search-input{background:#141414!important;border:1px solid rgba(255,255,255,.14)!important;color:#fff!important}
@@ -514,6 +514,11 @@ pre,.code-block-wrapper,.code-block-wrapper pre{background:#000!important;border
 :root{--purple:#fff;--pink:#fff}
 .more-models-btn,.model-menu-divider,.pin-model-btn{display:none!important}
 #chatModeMenu{max-height:60vh!important;overflow-y:auto!important}
+.sidebar-toggle::before,.new-chat-button::before{content:none!important;display:none!important;background:none!important}
+.chat-layout-container .sidebar-toggle,.chat-layout-container .new-chat-button{width:40px!important;height:40px!important;filter:none!important}
+.chat-layout-container .sidebar-toggle:hover,.chat-layout-container .new-chat-button:hover{background:#fff!important}
+.chat-layout-container:has(.has-messages) .sidebar-toggle,.chat-layout-container:has(.has-messages) .new-chat-button{background:#141414!important;border:1px solid rgba(255,255,255,.14)!important}
+.chat-layout-container:has(.has-messages) .sidebar-toggle:hover,.chat-layout-container:has(.has-messages) .new-chat-button:hover{background:#fff!important;border-color:#fff!important}
 `;
 
 const $ = (id) => document.getElementById(id);

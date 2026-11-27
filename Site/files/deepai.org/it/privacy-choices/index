@@ -16,7 +16,7 @@
     const app_base_url = 'https://api.deepai.org';
     const contact_url = '/contact';
   </script>
-  <script src="/it/i18n.315b6494b21c.js"></script>
+  <script src="/it/i18n.5e547d432c89.js"></script>
 
   <style>
     /* Privacy Modal - Comprehensive Design */
